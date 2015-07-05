@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\TEBAN\AndroidStudioProjects\Poli_MobileV2.0\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\20.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="f21927d22fe31889ecce94dd697a2e75b137e0ef">
+        <dex dex="C:\Users\TEBAN\AndroidStudioProjects\Poli_MobileV2.0\app\build\intermediates\pre-dexed\debug\classes-846d4b68e57c67fe29642f90141ce61f0f1b6128.jar" />
+    </item>
+    <item
+        jar="C:\Users\TEBAN\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\20.0.0\support-annotations-20.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="9d9013e9ff35fc3756411e62873c363c70c638fa">
+        <dex dex="C:\Users\TEBAN\AndroidStudioProjects\Poli_MobileV2.0\app\build\intermediates\pre-dexed\debug\support-annotations-20.0.0-21d31d09a541684cd9256c0f026c3a5d108a1033.jar" />
+    </item>
+    <item
+        jar="C:\Users\TEBAN\.gradle\caches\modules-2\files-2.1\org.jsoup\jsoup\1.8.1\1eb6690b0c629d7000c77a72df5e822fb974f521\jsoup-1.8.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="1eb6690b0c629d7000c77a72df5e822fb974f521">
+        <dex dex="C:\Users\TEBAN\AndroidStudioProjects\Poli_MobileV2.0\app\build\intermediates\pre-dexed\debug\jsoup-1.8.1-3f6e6797add85ebb946a5a2a77a830cb621bc125.jar" />
+    </item>
+    <item
+        jar="C:\Users\TEBAN\AndroidStudioProjects\Poli_MobileV2.0\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="8694693636ab36910c8100ce527c258ff3ebece0">
+        <dex dex="C:\Users\TEBAN\AndroidStudioProjects\Poli_MobileV2.0\app\build\intermediates\pre-dexed\debug\classes-12da37f80504c86843780b4803c596f650875769.jar" />
+    </item>
+    <item
+        jar="C:\Users\TEBAN\AndroidStudioProjects\Poli_MobileV2.0\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\libs\internal_impl-20.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d">
+        <dex dex="C:\Users\TEBAN\AndroidStudioProjects\Poli_MobileV2.0\app\build\intermediates\pre-dexed\debug\internal_impl-20.0.0-7031fed0980633a3d4a1444125e883c288156761.jar" />
+    </item>
+    <item
+        jar="C:\Users\TEBAN\AndroidStudioProjects\Poli_MobileV2.0\app\libs\ksoap2-android-assembly-3.1.1-jar-with-dependencies.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="ddcd1698b4bc242e26bfd99e3779688ab311b918">
+        <dex dex="C:\Users\TEBAN\AndroidStudioProjects\Poli_MobileV2.0\app\build\intermediates\pre-dexed\debug\ksoap2-android-assembly-3.1.1-jar-with-dependencies-700e8be4347470657afaecda1c5f86697a88cfdd.jar" />
+    </item>
+
+</items>

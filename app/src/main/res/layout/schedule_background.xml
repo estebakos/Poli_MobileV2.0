@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100" >
+    
+    <ImageView android:id="@+id/ivScheduleBackground"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:scaleType="fitCenter"
+        android:layout_weight="70"
+        android:src="@drawable/schedule_background"
+        />
+    
+    <TextView android:id="@+id/tvScheduleBackground"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_weight="30"
+        android:text="No tienes un horario para este día"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

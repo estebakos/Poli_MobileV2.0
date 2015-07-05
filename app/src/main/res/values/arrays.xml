@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="nav_menu_items">
+        <item>Estudiantes</item>
+        <item>Noticias</item>
+        <item>Horario de clases</item>
+        <item>Programación de Parciales</item>
+        <item>Notas</item>
+        <item>Iniciar Sesión</item>
+        <item>Docentes</item>
+        <item>Listado Clases</item>
+        <item>Resultado Evaluación</item>
+        <item>Asesorías</item>
+        <item>Información general</item>
+        <item>Acerca de</item>
+        <item>Ver más</item>
+        
+    </string-array> 
+    
+        <string-array name="types_array">
+        <item>Cátedra</item>
+        <item>Planta</item>   
+    </string-array>
+</resources>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearHorario"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:padding="10dp"
+    android:orientation="vertical" >
+    
+	<ImageView android:id="@+id/ivIconSchedule"
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:src="@drawable/ic_schedule"
+	    android:scaleType="centerCrop"/>
+    
+    <TextView
+        android:id="@+id/tvHora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10-12"
+        android:paddingTop="5dp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/ivIconSchedule"
+        android:textColor="@color/black" />
+    
+    <TextView
+        android:id="@+id/tvMateria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10-12"        
+        android:layout_alignParentRight="true"
+        android:textStyle="bold"
+        android:gravity="right"
+        android:textSize="15sp"
+        android:textColor="@color/black" /> />
+    
+    <TextView
+        android:id="@+id/tvProfesor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10-12"
+        android:layout_below="@id/tvMateria"
+        android:layout_alignParentRight="true"
+        android:paddingTop="5dp"
+        android:layout_alignLeft="@id/tvHora"
+        android:textStyle="bold"
+        android:gravity="right"
+        android:textSize="15sp"
+        android:textColor="@color/black" /> />
+    
+    <TextView
+        android:id="@+id/tvSede"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="PROFESORA DE LA VIDA"
+        android:textSize="30sp"
+        android:gravity="left"
+        android:layout_below="@id/tvHora"
+        android:layout_alignLeft="@id/tvHora"
+        android:paddingTop="5dp"
+        android:textColor="@color/black" /> />
+    
+    <TextView
+        android:id="@+id/tvAula"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10-12"
+        android:textSize="30sp"
+        android:layout_below="@id/tvProfesor"
+        android:layout_alignRight="@id/tvProfesor"
+        android:gravity="right"
+        android:textColor="@color/black" /> />
+
+</RelativeLayout>
