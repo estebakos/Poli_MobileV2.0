@@ -23,17 +23,14 @@
         android:allowBackup="true"
         android:label="@string/app_name" >
         <activity
-            android:name="com.example.poli_mobile.Menu"
+            android:name="com.example.poli_mobile.poli_mobile.ui.Menu"
             android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name="com.example.poli_mobile.ui.Menu"
-            android:windowSoftInputMode="adjustResize|stateVisible" >
         </activity>
         <activity
             android:name="br.liveo.navigationliveo.NavigationMain"
             android:label="Menu Principal"
-            android:screenOrientation="portrait" >
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomActionBarTheme" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

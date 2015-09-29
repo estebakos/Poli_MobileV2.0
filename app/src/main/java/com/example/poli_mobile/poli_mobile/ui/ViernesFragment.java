@@ -5,11 +5,11 @@ import java.util.List;
 import com.example.poli_mobile.R;
 import com.example.poli_mobile.R.id;
 import com.example.poli_mobile.R.layout;
-import com.example.poli_mobile.listeners.HorarioListener;
-import com.example.poli_mobile.utilidades.ApplicationSession;
-import com.example.poli_mobile_adaptadores.HorarioAdapter;
-import com.example.poli_mobile_entidades.HorarioSemestreActual;
-import com.example.poli_mobile_ws.WsHorario;
+import com.example.poli_mobile.poli_mobile.listeners.HorarioListener;
+import com.example.poli_mobile.poli_mobile.utilidades.ApplicationSession;
+import com.example.poli_mobile.poli_mobile_adaptadores.HorarioAdapter;
+import com.example.poli_mobile.poli_mobile_entidades.HorarioSemestreActual;
+import com.example.poli_mobile.poli_mobile_ws.WsHorario;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;

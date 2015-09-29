@@ -7,7 +7,7 @@ import org.jsoup.Jsoup;
 import com.example.poli_mobile.R;
 import com.example.poli_mobile.R.id;
 import com.example.poli_mobile.R.layout;
-import com.example.poli_mobile_entidades.Noticia;
+import com.example.poli_mobile.poli_mobile_entidades.Noticia;
 
 import android.app.Activity;
 import android.content.Context;

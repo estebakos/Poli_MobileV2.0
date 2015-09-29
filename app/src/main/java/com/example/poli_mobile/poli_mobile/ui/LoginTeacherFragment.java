@@ -17,12 +17,12 @@ import android.widget.Toast;
 import br.liveo.utils.Constant;
 
 import com.example.poli_mobile.R;
-import com.example.poli_mobile.listeners.LoginListener;
-import com.example.poli_mobile.listeners.loginListener;
-import com.example.poli_mobile.listeners.loginTeacherListener;
-import com.example.poli_mobile.utilidades.ApplicationSession;
-import com.example.poli_mobile_ws.WsLogin;
-import com.example.poli_mobile_ws.WsTeacherLogin;
+import com.example.poli_mobile.poli_mobile.listeners.LoginListenerTwo;
+import com.example.poli_mobile.poli_mobile.listeners.loginListener;
+import com.example.poli_mobile.poli_mobile.listeners.loginTeacherListener;
+import com.example.poli_mobile.poli_mobile.utilidades.ApplicationSession;
+import com.example.poli_mobile.poli_mobile_ws.WsLogin;
+import com.example.poli_mobile.poli_mobile_ws.WsTeacherLogin;
 
 public class LoginTeacherFragment extends Fragment implements loginTeacherListener {
 
@@ -30,14 +30,14 @@ public class LoginTeacherFragment extends Fragment implements loginTeacherListen
 
 	private EditText tvYear, tvPassword;
 	private Button btnSignIn;
-	private LoginListener lListener;
+	private LoginListenerTwo lListener;
 	private Bundle mBundle;
 	private int position;
 	private Spinner spType;
 	private ProgressDialog pdLogin;
 
 	public LoginTeacherFragment newInstance(String text,
-			LoginListener lListener, int position) {
+			LoginListenerTwo lListener, int position) {
 		LoginTeacherFragment mFragment = new LoginTeacherFragment();
 		mBundle = new Bundle();
 		mBundle.putString(Constant.TEXT_FRAGMENT, text);

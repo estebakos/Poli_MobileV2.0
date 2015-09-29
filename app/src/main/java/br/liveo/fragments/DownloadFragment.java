@@ -56,16 +56,16 @@ public class DownloadFragment extends Fragment {
 		super.onCreateOptionsMenu(menu, inflater);		
 		inflater.inflate(R.menu.menu, menu);
 		 	    
-		SearchView searchView = (SearchView) MenuItemCompat.getActionView(menu.findItem(Menus.SEARCH));
+		SearchView searchView = (SearchView) MenuItemCompat.getActionView(menu.findItem(Menus.HOME));
 	    searchView.setQueryHint(this.getString(R.string.search));
 	    
 	    ((EditText)searchView.findViewById(android.support.v7.appcompat.R.id.search_src_text))
         .setHintTextColor(getResources().getColor(R.color.white));	    
 	    searchView.setOnQueryTextListener(OnQuerySearchView);
 					    	   	    
-		menu.findItem(Menus.ADD).setVisible(true);
-		menu.findItem(Menus.UPDATE).setVisible(true);		
-		menu.findItem(Menus.SEARCH).setVisible(true);		
+		menu.findItem(Menus.HOME).setVisible(true);
+		menu.findItem(Menus.HOME).setVisible(true);
+		menu.findItem(Menus.HOME).setVisible(true);
   	    
 		mSearchCheck = false;	
 	}	
@@ -76,15 +76,9 @@ public class DownloadFragment extends Fragment {
 		
 		switch (item.getItemId()) {
 
-		case Menus.ADD:	    	
+		case Menus.HOME:
 			break;				
-		
-		case Menus.UPDATE:	    	
-			break;				
-			
-		case Menus.SEARCH:
-			mSearchCheck = true;
-			break;
+
 		}		
 		return true;
 	}	
