@@ -9,10 +9,10 @@ import org.ksoap2.serialization.SoapObject;
 import org.ksoap2.serialization.SoapSerializationEnvelope;
 import org.ksoap2.transport.HttpTransportSE;
 
-import com.example.poli_mobile.listeners.HorarioListener;
-import com.example.poli_mobile.listeners.NotasListener;
-import com.example.poli_mobile_entidades.HorarioSemestreActual;
-import com.example.poli_mobile_entidades.NotaMateria;
+import com.example.poli_mobile.poli_mobile.listeners.HorarioListener;
+import com.example.poli_mobile.poli_mobile.listeners.NotasListener;
+import com.example.poli_mobile.poli_mobile_entidades.HorarioSemestreActual;
+import com.example.poli_mobile.poli_mobile_entidades.NotaMateria;
 
 import android.os.AsyncTask;
 

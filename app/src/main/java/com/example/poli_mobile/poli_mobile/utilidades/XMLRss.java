@@ -13,7 +13,7 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
-import com.example.poli_mobile_entidades.Noticia;
+import com.example.poli_mobile.poli_mobile_entidades.Noticia;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;

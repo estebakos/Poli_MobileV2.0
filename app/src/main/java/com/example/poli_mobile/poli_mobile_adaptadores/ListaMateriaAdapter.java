@@ -15,8 +15,8 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.example.poli_mobile.R;
-import com.example.poli_mobile_entidades.HorarioSemestreActual;
-import com.example.poli_mobile_entidades.ListaMateria;
+import com.example.poli_mobile.poli_mobile_entidades.HorarioSemestreActual;
+import com.example.poli_mobile.poli_mobile_entidades.ListaMateria;
 
 public class ListaMateriaAdapter extends ArrayAdapter<ListaMateria> {
 

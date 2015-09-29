@@ -16,7 +16,6 @@ import android.widget.TextView;
 
 import com.example.poli_mobile.R;
 import com.example.poli_mobile.poli_mobile_entidades.HorarioSemestreActual;
-import com.example.poli_mobile_entidades.HorarioSemestreActual;
 
 public class HorarioAdapter extends ArrayAdapter<HorarioSemestreActual> {
 

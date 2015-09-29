@@ -6,8 +6,8 @@ import org.ksoap2.serialization.SoapPrimitive;
 import org.ksoap2.serialization.SoapSerializationEnvelope;
 import org.ksoap2.transport.HttpTransportSE;
 
-import com.example.poli_mobile.listeners.loginListener;
-import com.example.poli_mobile.listeners.loginTeacherListener;
+import com.example.poli_mobile.poli_mobile.listeners.loginListener;
+import com.example.poli_mobile.poli_mobile.listeners.loginTeacherListener;
 
 import android.os.AsyncTask;
 import android.view.View.OnClickListener;

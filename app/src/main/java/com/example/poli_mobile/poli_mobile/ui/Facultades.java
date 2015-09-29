@@ -8,10 +8,10 @@ import org.jsoup.Jsoup;
 import com.example.poli_mobile.R;
 import com.example.poli_mobile.R.id;
 import com.example.poli_mobile.R.layout;
-import com.example.poli_mobile.utilidades.ApplicationSession;
-import com.example.poli_mobile.utilidades.XMLRss;
-import com.example.poli_mobile_adaptadores.Noticias_Adapter;
-import com.example.poli_mobile_entidades.Noticia;
+import com.example.poli_mobile.poli_mobile.utilidades.ApplicationSession;
+import com.example.poli_mobile.poli_mobile.utilidades.XMLRss;
+import com.example.poli_mobile.poli_mobile_adaptadores.Noticias_Adapter;
+import com.example.poli_mobile.poli_mobile_entidades.Noticia;
 
 import br.liveo.fragments.DownloadFragment;
 import br.liveo.utils.Constant;

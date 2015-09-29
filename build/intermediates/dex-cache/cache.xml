@@ -2,46 +2,67 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\TEBAN\AndroidStudioProjects\Poli_MobileV2.0\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\20.0.0\classes.jar"
+        jar="/home/Teban/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="f21927d22fe31889ecce94dd697a2e75b137e0ef">
-        <dex dex="C:\Users\TEBAN\AndroidStudioProjects\Poli_MobileV2.0\app\build\intermediates\pre-dexed\debug\classes-846d4b68e57c67fe29642f90141ce61f0f1b6128.jar" />
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="/home/Teban/Documentos/Proyectos/Android/Poli_MobileV2.0/app/build/intermediates/pre-dexed/debug/library-2.4.0-7329e8c902e2c0401ae15cd7219c0a8d790cc711.jar" />
     </item>
     <item
-        jar="C:\Users\TEBAN\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\20.0.0\support-annotations-20.0.0.jar"
+        jar="/home/Teban/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/20.0.0/support-annotations-20.0.0.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="9d9013e9ff35fc3756411e62873c363c70c638fa">
-        <dex dex="C:\Users\TEBAN\AndroidStudioProjects\Poli_MobileV2.0\app\build\intermediates\pre-dexed\debug\support-annotations-20.0.0-21d31d09a541684cd9256c0f026c3a5d108a1033.jar" />
+        <dex dex="/home/Teban/Documentos/Proyectos/Android/Poli_MobileV2.0/app/build/intermediates/pre-dexed/debug/support-annotations-20.0.0-a2a8a415ad5eefd2434973adcb19ba04b3c44a7e.jar" />
     </item>
     <item
-        jar="C:\Users\TEBAN\.gradle\caches\modules-2\files-2.1\org.jsoup\jsoup\1.8.1\1eb6690b0c629d7000c77a72df5e822fb974f521\jsoup-1.8.1.jar"
+        jar="/home/Teban/Documentos/Proyectos/Android/Poli_MobileV2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/jars/classes.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="1eb6690b0c629d7000c77a72df5e822fb974f521">
-        <dex dex="C:\Users\TEBAN\AndroidStudioProjects\Poli_MobileV2.0\app\build\intermediates\pre-dexed\debug\jsoup-1.8.1-3f6e6797add85ebb946a5a2a77a830cb621bc125.jar" />
+        sha1="f21927d22fe31889ecce94dd697a2e75b137e0ef">
+        <dex dex="/home/Teban/Documentos/Proyectos/Android/Poli_MobileV2.0/app/build/intermediates/pre-dexed/debug/classes-f6af3d0243adbe01662f929ecfdc0b4e01cad25f.jar" />
     </item>
     <item
-        jar="C:\Users\TEBAN\AndroidStudioProjects\Poli_MobileV2.0\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="8694693636ab36910c8100ce527c258ff3ebece0">
-        <dex dex="C:\Users\TEBAN\AndroidStudioProjects\Poli_MobileV2.0\app\build\intermediates\pre-dexed\debug\classes-12da37f80504c86843780b4803c596f650875769.jar" />
-    </item>
-    <item
-        jar="C:\Users\TEBAN\AndroidStudioProjects\Poli_MobileV2.0\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\libs\internal_impl-20.0.0.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d">
-        <dex dex="C:\Users\TEBAN\AndroidStudioProjects\Poli_MobileV2.0\app\build\intermediates\pre-dexed\debug\internal_impl-20.0.0-7031fed0980633a3d4a1444125e883c288156761.jar" />
-    </item>
-    <item
-        jar="C:\Users\TEBAN\AndroidStudioProjects\Poli_MobileV2.0\app\libs\ksoap2-android-assembly-3.1.1-jar-with-dependencies.jar"
+        jar="/home/Teban/Documentos/Proyectos/Android/Poli_MobileV2.0/app/libs/ksoap2-android-assembly-3.1.1-jar-with-dependencies.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="ddcd1698b4bc242e26bfd99e3779688ab311b918">
-        <dex dex="C:\Users\TEBAN\AndroidStudioProjects\Poli_MobileV2.0\app\build\intermediates\pre-dexed\debug\ksoap2-android-assembly-3.1.1-jar-with-dependencies-700e8be4347470657afaecda1c5f86697a88cfdd.jar" />
+        <dex dex="/home/Teban/Documentos/Proyectos/Android/Poli_MobileV2.0/app/build/intermediates/pre-dexed/debug/ksoap2-android-assembly-3.1.1-jar-with-dependencies-343c28ee13cb6fc69b348b3c457bf75befc0db06.jar" />
+    </item>
+    <item
+        jar="/home/Teban/.gradle/caches/modules-2/files-2.1/org.jsoup/jsoup/1.8.1/1eb6690b0c629d7000c77a72df5e822fb974f521/jsoup-1.8.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="1eb6690b0c629d7000c77a72df5e822fb974f521">
+        <dex dex="/home/Teban/Documentos/Proyectos/Android/Poli_MobileV2.0/app/build/intermediates/pre-dexed/debug/jsoup-1.8.1-cbef272a6fe86854d0745e9e635e44f9351bf7aa.jar" />
+    </item>
+    <item
+        jar="/home/Teban/Documentos/Proyectos/Android/Poli_MobileV2.0/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/jars/libs/internal_impl-20.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d">
+        <dex dex="/home/Teban/Documentos/Proyectos/Android/Poli_MobileV2.0/app/build/intermediates/pre-dexed/debug/internal_impl-20.0.0-d60258408ea4ab35524210c4e6d4668ca73f3326.jar" />
+    </item>
+    <item
+        jar="/home/Teban/Documentos/Proyectos/Android/Poli_MobileV2.0/app/build/intermediates/exploded-aar/com.daimajia.slider/library/1.1.2/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="8aa807a27d3fde0de287ccb5cef2f302e180563f">
+        <dex dex="/home/Teban/Documentos/Proyectos/Android/Poli_MobileV2.0/app/build/intermediates/pre-dexed/debug/classes-640b1cc523f5b5e7a3402e2fe0d0c729f1b0e1f8.jar" />
+    </item>
+    <item
+        jar="/home/Teban/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="/home/Teban/Documentos/Proyectos/Android/Poli_MobileV2.0/app/build/intermediates/pre-dexed/debug/picasso-2.5.2-ba0158175b8856c203bf4b5309d498b9d8613b7e.jar" />
+    </item>
+    <item
+        jar="/home/Teban/Documentos/Proyectos/Android/Poli_MobileV2.0/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="8694693636ab36910c8100ce527c258ff3ebece0">
+        <dex dex="/home/Teban/Documentos/Proyectos/Android/Poli_MobileV2.0/app/build/intermediates/pre-dexed/debug/classes-431f0282dc101363203711ef19109fe8a747c68f.jar" />
     </item>
 
 </items>
