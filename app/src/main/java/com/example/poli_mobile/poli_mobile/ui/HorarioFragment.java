@@ -17,8 +17,6 @@ import android.view.ViewGroup;
 import android.widget.TabHost;
 import android.widget.TabHost.OnTabChangeListener;
 import android.widget.TabHost.TabContentFactory;
-import br.liveo.navigationliveo.NavigationMain;
-import br.liveo.utils.Constant;
 
 public class HorarioFragment extends Fragment implements
 		OnTabChangeListener {
@@ -62,7 +60,6 @@ public class HorarioFragment extends Fragment implements
 	public HorarioFragment newInstance(String text) {
 		HorarioFragment mFragment = new HorarioFragment();
 		Bundle mBundle = new Bundle();
-		mBundle.putString(Constant.TEXT_FRAGMENT, text);
 		mFragment.setArguments(mBundle);
 		return mFragment;
 	}
@@ -73,45 +70,45 @@ public class HorarioFragment extends Fragment implements
 	}
 
 	private void initialiseTabHost(Bundle args) {
-		mTabHost = (TabHost) v.findViewById(android.R.id.tabhost);
-		mTabHost.setup();
-		TabInfo tabInfo = null;
-		HorarioFragment.addTab((NavigationMain) getActivity(), this.mTabHost,
-				this.mTabHost.newTabSpec("Tab1").setIndicator("Lunes"),
-				(tabInfo = new TabInfo("Tab1", LunesFragment.class, args)));
-		this.mapTabInfo.put(tabInfo.tag, tabInfo);
-		HorarioFragment.addTab((NavigationMain) getActivity(), this.mTabHost,
-				this.mTabHost.newTabSpec("Tab2").setIndicator("Martes"),
-				(tabInfo = new TabInfo("Tab2", MartesFragment.class, args)));
-		this.mapTabInfo.put(tabInfo.tag, tabInfo);
-		HorarioFragment.addTab((NavigationMain) getActivity(), this.mTabHost,
-				this.mTabHost.newTabSpec("Tab3").setIndicator("Miércoles"),
-				(tabInfo = new TabInfo("Tab3", MiercolesFragment.class, args)));
-		this.mapTabInfo.put(tabInfo.tag, tabInfo);
-		
-		HorarioFragment.addTab((NavigationMain) getActivity(), this.mTabHost,
-				this.mTabHost.newTabSpec("Tab4").setIndicator("Jueves"),
-				(tabInfo = new TabInfo("Tab4", JuevesFragment.class, args)));
-		this.mapTabInfo.put(tabInfo.tag, tabInfo);
-		HorarioFragment.addTab((NavigationMain) getActivity(), this.mTabHost,
-				this.mTabHost.newTabSpec("Tab5").setIndicator("Viernes"),
-				(tabInfo = new TabInfo("Tab5", ViernesFragment.class, args)));
-		this.mapTabInfo.put(tabInfo.tag, tabInfo);
-		HorarioFragment.addTab((NavigationMain) getActivity(), this.mTabHost,
-				this.mTabHost.newTabSpec("Tab6").setIndicator("Sábado"),
-				(tabInfo = new TabInfo("Tab6", SabadoFragment.class, args)));
-		this.mapTabInfo.put(tabInfo.tag, tabInfo);
-		HorarioFragment.addTab((NavigationMain) getActivity(), this.mTabHost,
-				this.mTabHost.newTabSpec("Tab7").setIndicator("Domingo"),
-				(tabInfo = new TabInfo("Tab7", DomingoFragment.class, args)));
-		this.mapTabInfo.put(tabInfo.tag, tabInfo);
-		// Default to first tab
-		this.onTabChanged("Tab1");
-		//
-		mTabHost.setOnTabChangedListener(this);
+//		mTabHost = (TabHost) v.findViewById(android.R.id.tabhost);
+//		mTabHost.setup();
+//		TabInfo tabInfo = null;
+//		HorarioFragment.addTab((NavigationMain) getActivity(), this.mTabHost,
+//				this.mTabHost.newTabSpec("Tab1").setIndicator("Lunes"),
+//				(tabInfo = new TabInfo("Tab1", LunesFragment.class, args)));
+//		this.mapTabInfo.put(tabInfo.tag, tabInfo);
+//		HorarioFragment.addTab((NavigationMain) getActivity(), this.mTabHost,
+//				this.mTabHost.newTabSpec("Tab2").setIndicator("Martes"),
+//				(tabInfo = new TabInfo("Tab2", MartesFragment.class, args)));
+//		this.mapTabInfo.put(tabInfo.tag, tabInfo);
+//		HorarioFragment.addTab((NavigationMain) getActivity(), this.mTabHost,
+//				this.mTabHost.newTabSpec("Tab3").setIndicator("Miércoles"),
+//				(tabInfo = new TabInfo("Tab3", MiercolesFragment.class, args)));
+//		this.mapTabInfo.put(tabInfo.tag, tabInfo);
+//
+//		HorarioFragment.addTab((NavigationMain) getActivity(), this.mTabHost,
+//				this.mTabHost.newTabSpec("Tab4").setIndicator("Jueves"),
+//				(tabInfo = new TabInfo("Tab4", JuevesFragment.class, args)));
+//		this.mapTabInfo.put(tabInfo.tag, tabInfo);
+//		HorarioFragment.addTab((NavigationMain) getActivity(), this.mTabHost,
+//				this.mTabHost.newTabSpec("Tab5").setIndicator("Viernes"),
+//				(tabInfo = new TabInfo("Tab5", ViernesFragment.class, args)));
+//		this.mapTabInfo.put(tabInfo.tag, tabInfo);
+//		HorarioFragment.addTab((NavigationMain) getActivity(), this.mTabHost,
+//				this.mTabHost.newTabSpec("Tab6").setIndicator("Sábado"),
+//				(tabInfo = new TabInfo("Tab6", SabadoFragment.class, args)));
+//		this.mapTabInfo.put(tabInfo.tag, tabInfo);
+//		HorarioFragment.addTab((NavigationMain) getActivity(), this.mTabHost,
+//				this.mTabHost.newTabSpec("Tab7").setIndicator("Domingo"),
+//				(tabInfo = new TabInfo("Tab7", DomingoFragment.class, args)));
+//		this.mapTabInfo.put(tabInfo.tag, tabInfo);
+//		// Default to first tab
+//		this.onTabChanged("Tab1");
+//		//
+//		mTabHost.setOnTabChangedListener(this);
 	}
 
-	private static void addTab(NavigationMain activity, TabHost tabHost,
+/*	private static void addTab(NavigationMain activity, TabHost tabHost,
 			TabHost.TabSpec tabSpec, TabInfo tabInfo) {
 		// Attach a Tab view factory to the spec
 
@@ -132,7 +129,7 @@ public class HorarioFragment extends Fragment implements
 		}
 
 		tabHost.addTab(tabSpec);
-	}
+	}*/
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -143,7 +140,7 @@ public class HorarioFragment extends Fragment implements
 		if (savedInstanceState != null) {
 			mTabHost.setCurrentTabByTag(savedInstanceState.getString("tab"));
 		}
-		
+
 
 		return v;
 	}

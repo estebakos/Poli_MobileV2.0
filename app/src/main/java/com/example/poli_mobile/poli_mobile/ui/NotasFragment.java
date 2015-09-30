@@ -2,8 +2,6 @@ package com.example.poli_mobile.poli_mobile.ui;
 
 import java.util.List;
 
-import br.liveo.utils.Constant;
-
 import com.example.poli_mobile.R.id;
 import com.example.poli_mobile.R.layout;
 import com.example.poli_mobile.poli_mobile.listeners.NotasListener;
@@ -35,7 +33,7 @@ public class NotasFragment extends Fragment implements
 	public NotasFragment newInstance(String text) {
 		NotasFragment mFragment = new NotasFragment();
 		Bundle mBundle = new Bundle();
-		mBundle.putString(Constant.TEXT_FRAGMENT, text);
+		//mBundle.putString(Constant.TEXT_FRAGMENT, text);
 		mFragment.setArguments(mBundle);
 		return mFragment;
 	}

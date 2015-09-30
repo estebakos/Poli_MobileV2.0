@@ -1,16 +1,11 @@
 package com.example.poli_mobile.poli_mobile.ui;
 
-import com.example.poli_mobile.R;
 import com.example.poli_mobile.R.id;
 import com.example.poli_mobile.R.layout;
 import com.example.poli_mobile.poli_mobile.listeners.LoginListenerTwo;
 import com.example.poli_mobile.poli_mobile.listeners.loginListener;
-import com.example.poli_mobile.poli_mobile.listeners.LoginListenerTwo;
 import com.example.poli_mobile.poli_mobile.utilidades.ApplicationSession;
 import com.example.poli_mobile.poli_mobile_ws.WsLogin;
-import com.example.poli_mobile.poli_mobile_ws.WsCitaMedica;
-
-import br.liveo.utils.Constant;
 import android.app.ProgressDialog;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -21,7 +16,6 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
-import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -39,7 +33,6 @@ public class LoginFragment extends Fragment implements loginListener {
 			int position) {
 		LoginFragment mFragment = new LoginFragment();
 		mBundle = new Bundle();
-		mBundle.putString(Constant.TEXT_FRAGMENT, text);
 		mFragment.setArguments(mBundle);
 		ApplicationSession.position = position;
 		ApplicationSession.lListener = lListener;

@@ -51,4 +51,17 @@
     <string name="drawer_open">Open drawer navigation</string>
     <string name="drawer_close">Navigation drawer Close</string>
 
+    <string name="str_date">Fecha Nacimiento</string>
+    <string name="str_user">Usuario</string>
+    <string name="str_password">Contraseña</string>
+    <string name="str_remember_password">Recordar Contraseña</string>
+    <string name="str_ingresar">Ingresar</string>
+
+    <string name="str_please_wait">Por Favor Espera</string>
+    <string name="str_signing_in">Iniciando Sesión</string>
+
+    <string name="str_complete_fields">Por Favor Completa Todos Los Campos</string>
+    <string name="str_incorrect_credentials">Credenciales Incorrectas</string>
+
+
 </resources>

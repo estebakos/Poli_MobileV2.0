@@ -13,10 +13,6 @@ import com.example.poli_mobile.poli_mobile.utilidades.XMLRss;
 import com.example.poli_mobile.poli_mobile_adaptadores.Noticias_Adapter;
 import com.example.poli_mobile.poli_mobile_entidades.Noticia;
 
-import br.liveo.fragments.DownloadFragment;
-import br.liveo.utils.Constant;
-import android.app.Application;
-import android.app.Fragment;
 import android.content.Context;
 import android.graphics.Color;
 import android.net.ConnectivityManager;
@@ -26,10 +22,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
-import android.widget.ImageView;
 import android.widget.ListView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 public class Facultades extends android.support.v4.app.Fragment {
@@ -42,7 +35,6 @@ public class Facultades extends android.support.v4.app.Fragment {
 	public Facultades newInstance(String text){
 		Facultades mFragment = new Facultades();		
 		Bundle mBundle = new Bundle();
-		mBundle.putString(Constant.TEXT_FRAGMENT, text);
 		mFragment.setArguments(mBundle);
 		return mFragment;
 	}

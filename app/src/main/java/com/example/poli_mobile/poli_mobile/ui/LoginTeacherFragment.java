@@ -14,7 +14,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
-import br.liveo.utils.Constant;
 
 import com.example.poli_mobile.R;
 import com.example.poli_mobile.poli_mobile.listeners.LoginListenerTwo;
@@ -40,7 +39,6 @@ public class LoginTeacherFragment extends Fragment implements loginTeacherListen
 			LoginListenerTwo lListener, int position) {
 		LoginTeacherFragment mFragment = new LoginTeacherFragment();
 		mBundle = new Bundle();
-		mBundle.putString(Constant.TEXT_FRAGMENT, text);
 		mFragment.setArguments(mBundle);
 		ApplicationSession.position = position;
 		ApplicationSession.lListener = lListener;
