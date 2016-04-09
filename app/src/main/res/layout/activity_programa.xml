@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ingenieria"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Presentacion:"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            />
+
+        <TextView
+            android:id="@+id/tvPresentacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Presentacion:"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Modalidad:"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            />
+
+        <TextView
+            android:id="@+id/tvModalidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Modalidad:"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Perfil Profesional:"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            />
+
+        <TextView
+            android:id="@+id/tvPerfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Perfil Profesional:"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mision:"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            />
+
+        <TextView
+            android:id="@+id/tvMision"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mision:"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vision"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            />
+
+        <TextView
+            android:id="@+id/tvVision"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vision:"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Plan de Estudios:"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            />
+
+        <TextView
+            android:id="@+id/tvPlan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Plan de Estudios:"
+            android:textSize="15sp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Créditos:"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            />
+
+        <TextView
+            android:id="@+id/tvCreditos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Creditos:"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contacto:"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            />
+
+        <TextView
+            android:id="@+id/tvContacto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contacto:"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email:"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            />
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textSize="15sp"
+            android:layout_marginBottom="30dp"
+            />
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

@@ -30,10 +30,12 @@
                 android:hint="@string/str_date"
                 android:nextFocusForward="@+id/etLoginUser"
                 android:singleLine="true"
-                android:layout_marginTop="10dp"/>
+                android:layout_marginTop="10dp"
+                android:visibility="gone"/>
 
             <EditText
                 android:id="@+id/etLoginUser"
+                android:text="1017204946"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"

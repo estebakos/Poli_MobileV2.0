@@ -64,7 +64,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         restoreDefaultHintEditTextsColor();
         if (validateFields()) {
             launchDialog();
-            nManager.Authenticate(etDomain.getText().toString(), etUser.getText().toString(), etPassword.getText().toString());
+            nManager.Authenticate(etUser.getText().toString(), etPassword.getText().toString());
         } else {
             showTooltip(getString(R.string.str_complete_fields));
             changeHintEditTextsColor();
@@ -72,9 +72,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     }
 
     private void changeHintEditTextsColor() {
-        if (etDomain.getText().toString().equals("")) {
-            etDomain.setHintTextColor(Color.RED);
-        }
+
         if (etUser.getText().toString().equals("")) {
             etUser.setHintTextColor(Color.RED);
         }
@@ -90,7 +88,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     }
 
     private boolean validateFields() {
-        if (etUser.getText().toString().equals("") || etPassword.getText().toString().equals("") || etDomain.getText().toString().equals("")) {
+        if (etUser.getText().toString().equals("") || etPassword.getText().toString().equals("")) {
             return false;
         } else {
             return true;
@@ -146,7 +144,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         stopDialog();
         _axPrefs.storageRememberPassword(chkRememberPassword.isChecked());
         Intent mainIntent = new Intent().setClass(
-                LoginActivity.this, Menu.class);
+                LoginActivity.this, MenuEstudiante  .class);
         startActivity(mainIntent);
         finish();
     }
@@ -176,8 +174,10 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     }
 
     private void stopDialog() {
-        barProgressDialog.hide();
-        barProgressDialog.cancel();
+        if(barProgressDialog != null) {
+            barProgressDialog.hide();
+            barProgressDialog.cancel();
+        }
     }
 
 

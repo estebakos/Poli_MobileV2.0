@@ -1,8 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml:2:1-49:12
-	xmlns:android
-		ADDED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml:2:11-69
+ADDED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml:2:1-68:12
 	package
 		ADDED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml:3:5-38
 		INJECTED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml
@@ -13,6 +11,8 @@ ADDED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml
 		ADDED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml:4:5-28
 		INJECTED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml
 		INJECTED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
 ADDED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml:7:5-8:23
 	android:name
@@ -42,7 +42,7 @@ MERGED from [com.android.support:support-v4:22.2.0] F:\Proyectos\Android\Poli_Mo
 		INJECTED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml
 		INJECTED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml
 application
-ADDED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml:16:5-42:19
+ADDED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml:16:5-61:19
 MERGED from [com.android.support:appcompat-v7:22.2.0] F:\Proyectos\Android\Poli_MobileV2.0\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.0\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:22.2.0] F:\Proyectos\Android\Poli_MobileV2.0\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design:22.2.0] F:\Proyectos\Android\Poli_MobileV2.0\app\build\intermediates\exploded-aar\com.android.support\design\22.2.0\AndroidManifest.xml:22:5-20
@@ -57,52 +57,78 @@ MERGED from [com.android.support:support-v4:22.2.0] F:\Proyectos\Android\Poli_Mo
 		ADDED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml:19:9-41
 	android:allowBackup
 		ADDED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml:17:9-35
-activity#com.example.poli_mobile.poli_mobile.ui.Menu
-ADDED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml:21:9-25:20
+activity#com.example.poli_mobile.poli_mobile.ui.MenuEstudiante
+ADDED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml:21:9-26:20
 	android:label
 		ADDED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml:23:13-45
+	android:theme
+		ADDED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml:24:13-46
 	android:name
-		ADDED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml:22:13-71
+		ADDED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml:22:13-58
+activity#com.example.poli_mobile.poli_mobile.ui.FacultadActivity
+ADDED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml:28:9-31:59
+	android:label
+		ADDED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml:30:13-45
+	android:theme
+		ADDED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml:31:13-57
+	android:name
+		ADDED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml:29:13-60
+activity#com.example.poli_mobile.poli_mobile.ui.ProgramasActivity
+ADDED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml:33:9-36:59
+	android:label
+		ADDED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml:35:13-45
+	android:theme
+		ADDED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml:36:13-57
+	android:name
+		ADDED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml:34:13-61
+activity#com.example.poli_mobile.poli_mobile.ui.ProgramaActivity
+ADDED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml:38:9-44:20
+	android:label
+		ADDED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml:40:13-45
+	android:theme
+		ADDED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml:41:13-57
+	android:name
+		ADDED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml:39:13-60
 activity#com.example.poli_mobile.poli_mobile.ui.LoginActivity
-ADDED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml:26:9-30:24
+ADDED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml:45:9-49:24
 	android:label
-		ADDED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml:28:13-45
+		ADDED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml:47:13-45
 	android:theme
-		ADDED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml:29:13-57
+		ADDED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml:48:13-57
 	android:name
-		ADDED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml:27:13-80
+		ADDED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml:46:13-80
 activity#com.example.poli_mobile.poli_mobile.ui.SplashActivity
-ADDED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml:31:9-41:20
+ADDED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml:50:9-60:20
 	android:screenOrientation
-		ADDED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml:35:14-50
+		ADDED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml:54:14-50
 	android:label
-		ADDED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml:34:13-43
+		ADDED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml:53:13-43
 	android:theme
-		ADDED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml:32:13-69
+		ADDED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml:51:13-69
 	android:name
-		ADDED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml:33:13-58
+		ADDED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml:52:13-58
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml:36:13-40:29
+ADDED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml:55:13-59:29
 action#android.intent.action.MAIN
-ADDED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml:37:17-69
+ADDED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml:56:17-69
 	android:name
-		ADDED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml:37:25-66
+		ADDED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml:56:25-66
 category#android.intent.category.LAUNCHER
-ADDED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml:39:17-77
+ADDED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml:58:17-77
 	android:name
-		ADDED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml:39:27-74
+		ADDED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml:58:27-74
 uses-permission#android.permission.GET_ACCOUNTS
-ADDED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml:45:5-71
+ADDED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml:64:5-71
 	android:name
-		ADDED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml:45:22-68
+		ADDED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml:64:22-68
 uses-permission#android.permission.READ_PROFILE
-ADDED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml:46:5-71
+ADDED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml:65:5-71
 	android:name
-		ADDED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml:46:22-68
+		ADDED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml:65:22-68
 uses-permission#android.permission.READ_CONTACTS
-ADDED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml:47:5-72
+ADDED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml:66:5-72
 	android:name
-		ADDED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml:47:22-69
+		ADDED from F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\AndroidManifest.xml:66:22-69
 activity#android.support.v7.widget.TestActivity
 ADDED from [com.android.support:recyclerview-v7:21.0.3] F:\Proyectos\Android\Poli_MobileV2.0\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\21.0.3\AndroidManifest.xml:18:9-115
 	android:label

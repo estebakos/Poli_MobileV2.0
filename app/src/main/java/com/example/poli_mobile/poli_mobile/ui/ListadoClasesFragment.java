@@ -7,6 +7,7 @@ import com.example.poli_mobile.R.id;
 import com.example.poli_mobile.R.layout;
 import com.example.poli_mobile.poli_mobile.listeners.HorarioListener;
 import com.example.poli_mobile.poli_mobile.listeners.ListadorMateriaListener;
+import com.example.poli_mobile.poli_mobile.network.NetworkManager;
 import com.example.poli_mobile.poli_mobile.utilidades.ApplicationSession;
 import com.example.poli_mobile.poli_mobile_adaptadores.HorarioAdapter;
 import com.example.poli_mobile.poli_mobile_adaptadores.ListaMateriaAdapter;
@@ -65,10 +66,8 @@ public class ListadoClasesFragment extends Fragment implements
 	}
 
 	public void callService() {
-		WsListadoClases wshora = new WsListadoClases(ApplicationSession.SessionTeacher);
-		wshora.setLoginListener(this);
-
-		wshora.execute();
+		NetworkManager.getNManagerInstance().setListadorMateriaListener(this);
+		NetworkManager.getNManagerInstance().getListadoClase();
 	}
 
 	@Override

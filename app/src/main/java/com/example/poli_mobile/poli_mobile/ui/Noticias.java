@@ -3,11 +3,9 @@ package com.example.poli_mobile.poli_mobile.ui;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.jsoup.Jsoup;
-
-import com.example.poli_mobile.R;
 import com.example.poli_mobile.R.id;
 import com.example.poli_mobile.R.layout;
+import com.example.poli_mobile.poli_mobile.utilidades.AppContext;
 import com.example.poli_mobile.poli_mobile.utilidades.ApplicationSession;
 import com.example.poli_mobile.poli_mobile.utilidades.XMLRss;
 import com.example.poli_mobile.poli_mobile_adaptadores.Noticias_Adapter;
@@ -25,15 +23,16 @@ import android.view.ViewGroup;
 import android.widget.ListView;
 import android.widget.Toast;
 
-public class Facultades extends android.support.v4.app.Fragment {
+public class Noticias extends android.support.v4.app.Fragment {
 	private Noticias_Adapter adapter;
 	public ArrayList<Noticia> Array_Noticias;
 	public ArrayList<Noticia> Array_NoticiasOff;
 	public ListView lvNoticias;
 	String ruta;
+	public static final String ARG_SECTION_TITLE = "Home";
 
-	public Facultades newInstance(String text){
-		Facultades mFragment = new Facultades();		
+	public static Noticias newInstance(String text){
+		Noticias mFragment = new Noticias();
 		Bundle mBundle = new Bundle();
 		mFragment.setArguments(mBundle);
 		return mFragment;
@@ -43,7 +42,7 @@ public class Facultades extends android.support.v4.app.Fragment {
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		View v = new View(getActivity());
-		v = inflater.inflate(layout.facultades, container, false);
+		v = inflater.inflate(layout.fragment_noticias, container, false);
 		if(ApplicationSession.rlayout!=null)
 		{
 			ApplicationSession.rlayout.setBackgroundColor(Color.parseColor("#607d8b"));
@@ -83,8 +82,7 @@ public class Facultades extends android.support.v4.app.Fragment {
 
 		@Override
 		protected Boolean doInBackground(final String... params) {
-			XMLRss parser = new XMLRss(feedUrl, getActivity()
-					.getApplicationContext());
+			XMLRss parser = new XMLRss(feedUrl, AppContext.getContext());
 			if (isOnline()) {
 				Array_Noticias = parser.parse();
 			}

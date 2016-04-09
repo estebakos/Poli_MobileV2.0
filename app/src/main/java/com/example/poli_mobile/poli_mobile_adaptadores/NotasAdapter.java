@@ -41,13 +41,11 @@ public class NotasAdapter extends ArrayAdapter<NotaMateria> {
 	public View getView(int position, View convertView, ViewGroup parent) {
 
 		/* create a new view of my layout and inflate it in the row */
-		convertView = (RelativeLayout) inflater.inflate(resource, null);
+		convertView = inflater.inflate(resource, null);
 
 		/* Extract the city's object to show */
 		NotaMateria materia = lMateria.get(position);
 
-		RelativeLayout relativeHorario = (RelativeLayout) convertView
-				.findViewById(R.id.linearHorario);
 
 
 		/* Take the TextView from layout and set the city's wiki link */
@@ -63,16 +61,11 @@ public class NotasAdapter extends ArrayAdapter<NotaMateria> {
 		TextView txtSeguimiento = (TextView) convertView.findViewById(R.id.tvSeguimiento);
 		txtSeguimiento.setText(materia.getSeguimiento());
 		
-		
 		TextView txtPrimerPArcial = (TextView) convertView.findViewById(R.id.tvFinal);
 		txtPrimerPArcial.setText(materia.getParcial1());
 		
 		TextView txtNotaFinal = (TextView) convertView.findViewById(R.id.tvNotaFinal);
 		txtNotaFinal.setText(materia.getNotafinal());
-
-
-		relativeHorario.setBackgroundDrawable(ctx.getResources().getDrawable(
-				R.drawable.selector_item_schedule_white));
 
 		return convertView;
 	}

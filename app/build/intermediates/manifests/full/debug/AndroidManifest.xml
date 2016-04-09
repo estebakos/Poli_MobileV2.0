@@ -22,8 +22,22 @@
         android:allowBackup="true"
         android:label="@string/app_name" >
         <activity
-            android:name="com.example.poli_mobile.poli_mobile.ui.Menu"
-            android:label="@string/app_name" >
+            android:name="com.example.poli_mobile.poli_mobile.ui.MenuEstudiante"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Poli" >
+        </activity>
+        <activity
+            android:name="com.example.poli_mobile.poli_mobile.ui.FacultadActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.example.poli_mobile.poli_mobile.ui.ProgramasActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.example.poli_mobile.poli_mobile.ui.ProgramaActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.Light" >
         </activity>
         <activity
             android:name="com.example.poli_mobile.poli_mobile.ui.LoginActivity"

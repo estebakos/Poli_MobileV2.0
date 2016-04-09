@@ -6,6 +6,7 @@ import com.example.poli_mobile.R;
 import com.example.poli_mobile.R.id;
 import com.example.poli_mobile.R.layout;
 import com.example.poli_mobile.poli_mobile.listeners.HorarioListener;
+import com.example.poli_mobile.poli_mobile.network.NetworkManager;
 import com.example.poli_mobile.poli_mobile.utilidades.ApplicationSession;
 import com.example.poli_mobile.poli_mobile_adaptadores.HorarioAdapter;
 import com.example.poli_mobile.poli_mobile_entidades.HorarioSemestreActual;
@@ -47,10 +48,8 @@ public class SabadoFragment extends Fragment implements HorarioListener,
 	}
 
 	public void callService() {
-		WsHorario wshora = new WsHorario(ApplicationSession.SessionStudent, "Sabado");
-		wshora.setLoginListener(this);
-
-		wshora.execute();
+		NetworkManager.getNManagerInstance().setHorarioListener(this);
+		NetworkManager.getNManagerInstance().getHorario("Sabado");
 	}
 
 	@Override

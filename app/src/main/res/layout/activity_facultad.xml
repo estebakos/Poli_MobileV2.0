@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ingenieria"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Generalidades:"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            />
+
+        <TextView
+            android:id="@+id/tvGeneralidades"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mision:"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mision:"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            />
+
+        <TextView
+            android:id="@+id/tvMision"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mision:"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vision:"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            />
+
+        <TextView
+            android:id="@+id/tvVision"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vision:"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Valores:"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            />
+
+        <TextView
+            android:id="@+id/tvValores"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Valores:"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fundamentos:"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            />
+
+        <TextView
+            android:id="@+id/tvFundamentos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Generalidades:"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Principios:"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            />
+
+        <TextView
+            android:id="@+id/tvPrincipios"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Generalidades:"
+            android:textSize="15sp"
+            />
+
+        <Button
+            android:id="@+id/btnProgramas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/material_green"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:padding="15dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Ver Programas"
+            android:layout_marginBottom="30dp"/>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

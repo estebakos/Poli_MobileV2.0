@@ -39,13 +39,12 @@ public class HorarioAdapter extends ArrayAdapter<HorarioSemestreActual> {
 	public View getView(int position, View convertView, ViewGroup parent) {
 
 		/* create a new view of my layout and inflate it in the row */
-		convertView = (RelativeLayout) inflater.inflate(resource, null);
+		convertView = inflater.inflate(resource, null);
 
 		/* Extract the city's object to show */
 		HorarioSemestreActual horario = lhorario.get(position);
 
-		RelativeLayout relativeHorario = (RelativeLayout) convertView
-				.findViewById(R.id.linearHorario);
+
 
 		/* Take the TextView from layout and set the city's name */
 		TextView txtName = (TextView) convertView.findViewById(R.id.tvProfesor);
@@ -64,9 +63,6 @@ public class HorarioAdapter extends ArrayAdapter<HorarioSemestreActual> {
 		TextView txtMateria = (TextView) convertView
 				.findViewById(R.id.tvMateria);
 		txtMateria.setText(horario.getNomMateria());
-
-		relativeHorario.setBackgroundDrawable(ctx.getResources().getDrawable(
-				R.drawable.selector_item_schedule_white));
 
 		return convertView;
 	}

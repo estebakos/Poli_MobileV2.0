@@ -40,13 +40,10 @@ public class ListaMateriaAdapter extends ArrayAdapter<ListaMateria> {
 	public View getView(int position, View convertView, ViewGroup parent) {
 
 		/* create a new view of my layout and inflate it in the row */
-		convertView = (RelativeLayout) inflater.inflate(resource, null);
+		convertView = inflater.inflate(resource, null);
 
 		/* Extract the city's object to show */
 		ListaMateria materia = lMateria.get(position);
-
-		RelativeLayout relativeHorario = (RelativeLayout) convertView
-				.findViewById(R.id.linearHorario);
 
 
 		/* Take the TextView from layout and set the city's wiki link */
@@ -63,8 +60,6 @@ public class ListaMateriaAdapter extends ArrayAdapter<ListaMateria> {
 				.findViewById(R.id.tvMateria);
 		txtMateria.setText(materia.getNombreMateria());
 
-		relativeHorario.setBackgroundDrawable(ctx.getResources().getDrawable(
-				R.drawable.selector_item_schedule_white));
 
 		return convertView;
 	}

@@ -66,7 +66,7 @@ public class SplashActivity extends Activity {
                 else
                 {
                     Intent mainIntent = new Intent().setClass(
-                            SplashActivity.this, com.example.poli_mobile.poli_mobile.ui.Menu.class);
+                            SplashActivity.this, MenuEstudiante.class);
                     startActivity(mainIntent);
                 }
 

@@ -8,23 +8,21 @@ package com.example.poli_mobile.poli_mobile_entidades;
 import java.util.List;
 
 /**
- *
  * @author Casa
  */
 public class Programa {
-    
+
     private String Cod_programa;
     private String Nom_programa;
-    private String Duracion;
+    private String Email;
+    private String Modalidad;
+    private String creditos;
     private String Presentacion;
     private String Mision;
     private String Vision;
     private String Perfil_Profesional;
-    private String Perfil_Ocupacional;
-    private String Metodologia;
     private String Contacto;
-    private String Competencias;
-    private List <PlanEstudio> PlanEstudio;
+    private String Plan_estudios;
 
     public String getCod_programa() {
         return Cod_programa;
@@ -42,12 +40,28 @@ public class Programa {
         this.Nom_programa = Nom_programa;
     }
 
-    public String getDuracion() {
-        return Duracion;
+    public String getEmail() {
+        return Email;
     }
 
-    public void setDuracion(String Duracion) {
-        this.Duracion = Duracion;
+    public void setEmail(String Email) {
+        this.Email = Email;
+    }
+
+    public String getModalidad() {
+        return Modalidad;
+    }
+
+    public void setModalidad(String Modalidad) {
+        this.Modalidad = Modalidad;
+    }
+
+    public String getCreditos() {
+        return creditos;
+    }
+
+    public void setCreditos(String creditos) {
+        this.creditos = creditos;
     }
 
     public String getPresentacion() {
@@ -82,22 +96,6 @@ public class Programa {
         this.Perfil_Profesional = Perfil_Profesional;
     }
 
-    public String getPerfil_Ocupacional() {
-        return Perfil_Ocupacional;
-    }
-
-    public void setPerfil_Ocupacional(String Perfil_Ocupacional) {
-        this.Perfil_Ocupacional = Perfil_Ocupacional;
-    }
-
-    public String getMetodologia() {
-        return Metodologia;
-    }
-
-    public void setMetodologia(String Metodologia) {
-        this.Metodologia = Metodologia;
-    }
-
     public String getContacto() {
         return Contacto;
     }
@@ -106,20 +104,11 @@ public class Programa {
         this.Contacto = Contacto;
     }
 
-    public String getCompetencias() {
-        return Competencias;
+    public String getPlan_estudios() {
+        return Plan_estudios;
     }
 
-    public void setCompetencias(String Competencias) {
-        this.Competencias = Competencias;
+    public void setPlan_estudios(String Plan_estudios) {
+        this.Plan_estudios = Plan_estudios;
     }
-
-    public List <PlanEstudio> getPlanEstudio() {
-        return PlanEstudio;
-    }
-
-    public void setPlanEstudio(List <PlanEstudio> PlanEstudio) {
-        this.PlanEstudio = PlanEstudio;
-    }
-            
 }

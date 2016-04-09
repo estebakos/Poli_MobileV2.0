@@ -1,88 +1,205 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/linearHorario"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:layout_margin="10dp"
-    android:orientation="vertical"
-    android:padding="10dp" >
+    android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/ivIconSchedule"
-        android:layout_width="wrap_content"
+    <android.support.v7.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/linearHorario"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:scaleType="centerCrop"
-        android:src="@drawable/ic_rating" />
+        app:cardCornerRadius="10dp"
+        app:cardUseCompatPadding="true">
 
-    <TextView
-        android:id="@+id/tvPrimerParcial"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_marginLeft="5dp"
-        android:paddingTop="5dp"
-        android:text="10-12"
-        android:textColor="@color/black"
-        android:textSize="15sp"
-        android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
 
-    <TextView
-        android:id="@+id/tvMateria"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/ivIconSchedule"
-        
-        android:text="10-12"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:gravity="left"
-        android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/tvProfesor"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/tvMateria"
-        android:layout_toRightOf="@id/ivIconSchedule"
-        android:gravity="left"
-        android:paddingTop="5dp"
-        android:singleLine="true"
-        android:text="PROFESORA DE LA VIDA"
-        android:textColor="@color/black"
-        android:textSize="15sp" />
- 
+            <TextView
+                android:id="@+id/tvMateria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="Desarrollo del pensamiento analítico y sistémico"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/tvFinal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignRight="@id/tvPrimerParcial"
-        android:layout_below="@id/tvPrimerParcial"
-        android:gravity="right"
-        android:text="10-12"
-        android:textColor="@color/black"
-        android:textSize="15sp" />
 
-    <TextView
-        android:id="@+id/tvNotaFinal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignRight="@id/tvPrimerParcial"
-        android:layout_below="@+id/tvSeguimiento"
-        android:gravity="right"
-        android:text="10-12"
-        android:textColor="@color/black"
-        android:textSize="30sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/tvSeguimiento"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignRight="@id/tvPrimerParcial"
-        android:layout_below="@id/tvFinal"
-        android:gravity="right"
-        android:text="10-12"
-        android:textColor="@color/black"
-        android:textSize="15sp" />
 
-</RelativeLayout>
+                <ImageView
+                    android:id="@+id/ivIconSchedule"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_rating" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="5"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/tvProfesor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:padding="5dp"
+                        android:text="Claudia Rosero Beltrán"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="italic" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="6"
+                            android:ellipsize="end"
+                            android:gravity="right"
+                            android:maxLines="2"
+                            android:padding="5dp"
+                            android:text="Primer Parcial:"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/tvPrimerParcial"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:gravity="right"
+                            android:padding="5dp"
+                            android:text="3.5"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="italic" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="6"
+                            android:ellipsize="end"
+                            android:gravity="right"
+                            android:maxLines="2"
+                            android:padding="5dp"
+                            android:text="Final:"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/tvFinal"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:gravity="right"
+                            android:padding="5dp"
+                            android:text="5.0"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="italic" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="6"
+                            android:ellipsize="end"
+                            android:gravity="right"
+                            android:maxLines="2"
+                            android:padding="5dp"
+                            android:text="Seguimiento:"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/tvSeguimiento"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:gravity="right"
+                            android:padding="5dp"
+                            android:text="4.0"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="italic" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="6"
+                            android:ellipsize="end"
+                            android:gravity="right"
+                            android:maxLines="2"
+                            android:padding="5dp"
+                            android:text="Nota Final:"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/tvNotaFinal"
+                            android:layout_width="0dp"
+                            android:layout_weight="3"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:padding="5dp"
+                            android:text="3.8"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="italic" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="-5dp"
+        android:background="@color/blue_light"/>
+
+</LinearLayout>

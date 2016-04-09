@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:checked="true"
+
+            android:title="Inicio" />
+
+
+        <item
+            android:id="@+id/nav_facultades"
+            android:checked="true"
+
+            android:title="Facultades" />
+
+
+        <item
+            android:id="@+id/nav_calendario"
+            android:checked="true"
+
+            android:title="Calendario" />
+
+        <item
+            android:id="@+id/nav_citas"
+            android:checked="true"
+
+            android:title="Citas Médicas" />
+
+        <item
+            android:id="@+id/nav_parciales"
+            android:checked="true"
+            android:title="Parciales" />
+
+        <item
+            android:id="@+id/nav_horario"
+            android:checked="true"
+
+            android:title="Horario de Clase" />
+
+<!--        <item
+            android:id="@+id/nav_asesoria"
+            android:checked="true"
+            android:icon="@drawable/ic_news"
+            android:title="Asesoría Académica" />-->
+
+        <item
+            android:id="@+id/nav_notas"
+            android:checked="true"
+
+            android:title="Notas" />
+
+<!--        <item
+            android:id="@+id/nav_correo"
+            android:checked="true"
+            android:icon="@drawable/ic_news"
+            android:title="Correo Electrónico" />-->
+
+        <item
+            android:id="@+id/nav_pago"
+            android:checked="true"
+
+            android:title="Recibos de Pago" />
+
+        <item
+            android:id="@+id/nav_listaclase"
+            android:checked="true"
+
+            android:title="Lista de Clase" />
+
+     <!--   <item
+            android:id="@+id/nav_evaluacion"
+            android:checked="true"
+            android:icon="@drawable/ic_news"
+            android:title="Evaluación Docente" />-->
+
+
+        <item
+            android:id="@+id/nav_acerca"
+            android:checked="true"
+
+            android:title="Acerca del Poli" />
+
+        <item
+            android:id="@+id/nav_about"
+            android:checked="true"
+
+            android:title="Acerca de" />
+
+
+    </group>
+
+</menu>

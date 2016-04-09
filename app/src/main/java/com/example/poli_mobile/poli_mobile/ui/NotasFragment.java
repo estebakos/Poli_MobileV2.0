@@ -5,6 +5,7 @@ import java.util.List;
 import com.example.poli_mobile.R.id;
 import com.example.poli_mobile.R.layout;
 import com.example.poli_mobile.poli_mobile.listeners.NotasListener;
+import com.example.poli_mobile.poli_mobile.network.NetworkManager;
 import com.example.poli_mobile.poli_mobile.utilidades.ApplicationSession;;
 import com.example.poli_mobile.poli_mobile_adaptadores.NotasAdapter;
 import com.example.poli_mobile.poli_mobile_entidades.NotaMateria;
@@ -61,10 +62,8 @@ public class NotasFragment extends Fragment implements
 	}
 
 	public void callService() {
-		WsNotas wshora = new WsNotas(ApplicationSession.SessionStudent);
-		wshora.setLoginListener(this);
-
-		wshora.execute();
+		NetworkManager.getNManagerInstance().setNotasListener(this);
+		NetworkManager.getNManagerInstance().getNotas();
 	}
 
 	@Override
