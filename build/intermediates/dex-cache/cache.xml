@@ -2,20 +2,6 @@
 <items version="2" >
 
     <item
-        jar="F:\Proyectos\Android\Poli_MobileV2.0\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.0\jars\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="73753982da6bde518f3a4c6b372749981d14d1a0">
-        <dex dex="F:\Proyectos\Android\Poli_MobileV2.0\app\build\intermediates\pre-dexed\debug\classes-6fdb49ca2518c8efae2ab843c53e90df5ae59735.jar" />
-    </item>
-    <item
-        jar="F:\Proyectos\Android\Poli_MobileV2.0\app\build\intermediates\exploded-aar\com.android.support\design\22.2.0\jars\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="fc63b820d54c8a27a3a614bdd93920e0076581c2">
-        <dex dex="F:\Proyectos\Android\Poli_MobileV2.0\app\build\intermediates\pre-dexed\debug\classes-482b0bb091092651d61037f3e75fda946f4871a5.jar" />
-    </item>
-    <item
         jar="F:\Proyectos\Android\Poli_MobileV2.0\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\21.0.3\jars\classes.jar"
         jumboMode="false"
         revision="21.1.2"
@@ -23,11 +9,25 @@
         <dex dex="F:\Proyectos\Android\Poli_MobileV2.0\app\build\intermediates\pre-dexed\debug\classes-0e13c1ed4d72832453fc4d5490b39ae5070fc3ad.jar" />
     </item>
     <item
-        jar="C:\Users\TEBAN\.gradle\caches\modules-2\files-2.1\org.jsoup\jsoup\1.8.1\1eb6690b0c629d7000c77a72df5e822fb974f521\jsoup-1.8.1.jar"
+        jar="F:\Proyectos\Android\Poli_MobileV2.0\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\libs\internal_impl-22.2.0.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="1eb6690b0c629d7000c77a72df5e822fb974f521">
-        <dex dex="F:\Proyectos\Android\Poli_MobileV2.0\app\build\intermediates\pre-dexed\debug\jsoup-1.8.1-3f6e6797add85ebb946a5a2a77a830cb621bc125.jar" />
+        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
+        <dex dex="F:\Proyectos\Android\Poli_MobileV2.0\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.0-a455154d7fe3cc575d2ae393fa20046dbf1a9fbc.jar" />
+    </item>
+    <item
+        jar="F:\Proyectos\Android\Poli_MobileV2.0\app\libs\ksoap2-android-assembly-3.1.1-jar-with-dependencies.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="ddcd1698b4bc242e26bfd99e3779688ab311b918">
+        <dex dex="F:\Proyectos\Android\Poli_MobileV2.0\app\build\intermediates\pre-dexed\debug\ksoap2-android-assembly-3.1.1-jar-with-dependencies-62239eb00a91f4966a6fa46b032cc0b20590debd.jar" />
+    </item>
+    <item
+        jar="C:\Users\TEBAN\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.2.0\support-annotations-22.2.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
+        <dex dex="F:\Proyectos\Android\Poli_MobileV2.0\app\build\intermediates\pre-dexed\debug\support-annotations-22.2.0-2976445c92632954e10ad8f47e4432d081d4b27c.jar" />
     </item>
     <item
         jar="F:\Proyectos\Android\Poli_MobileV2.0\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\classes.jar"
@@ -44,13 +44,6 @@
         <dex dex="F:\Proyectos\Android\Poli_MobileV2.0\app\build\intermediates\pre-dexed\debug\classes-d568edf813923ab58600c32dfe9a8f71f89273ea.jar" />
     </item>
     <item
-        jar="F:\Proyectos\Android\Poli_MobileV2.0\app\libs\ksoap2-android-assembly-3.1.1-jar-with-dependencies.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="ddcd1698b4bc242e26bfd99e3779688ab311b918">
-        <dex dex="F:\Proyectos\Android\Poli_MobileV2.0\app\build\intermediates\pre-dexed\debug\ksoap2-android-assembly-3.1.1-jar-with-dependencies-62239eb00a91f4966a6fa46b032cc0b20590debd.jar" />
-    </item>
-    <item
         jar="F:\Proyectos\Android\Poli_MobileV2.0\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\21.0.3\jars\classes.jar"
         jumboMode="false"
         revision="21.1.2"
@@ -58,18 +51,25 @@
         <dex dex="F:\Proyectos\Android\Poli_MobileV2.0\app\build\intermediates\pre-dexed\debug\classes-9f9d06973b2b4f345d294c08168586ba56d76ce6.jar" />
     </item>
     <item
-        jar="C:\Users\TEBAN\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.2.0\support-annotations-22.2.0.jar"
+        jar="C:\Users\TEBAN\.gradle\caches\modules-2\files-2.1\org.jsoup\jsoup\1.8.1\1eb6690b0c629d7000c77a72df5e822fb974f521\jsoup-1.8.1.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
-        <dex dex="F:\Proyectos\Android\Poli_MobileV2.0\app\build\intermediates\pre-dexed\debug\support-annotations-22.2.0-2976445c92632954e10ad8f47e4432d081d4b27c.jar" />
+        sha1="1eb6690b0c629d7000c77a72df5e822fb974f521">
+        <dex dex="F:\Proyectos\Android\Poli_MobileV2.0\app\build\intermediates\pre-dexed\debug\jsoup-1.8.1-3f6e6797add85ebb946a5a2a77a830cb621bc125.jar" />
     </item>
     <item
-        jar="F:\Proyectos\Android\Poli_MobileV2.0\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\libs\internal_impl-22.2.0.jar"
+        jar="F:\Proyectos\Android\Poli_MobileV2.0\app\build\intermediates\exploded-aar\com.android.support\design\22.2.0\jars\classes.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
-        <dex dex="F:\Proyectos\Android\Poli_MobileV2.0\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.0-a455154d7fe3cc575d2ae393fa20046dbf1a9fbc.jar" />
+        sha1="fc63b820d54c8a27a3a614bdd93920e0076581c2">
+        <dex dex="F:\Proyectos\Android\Poli_MobileV2.0\app\build\intermediates\pre-dexed\debug\classes-482b0bb091092651d61037f3e75fda946f4871a5.jar" />
+    </item>
+    <item
+        jar="F:\Proyectos\Android\Poli_MobileV2.0\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="73753982da6bde518f3a4c6b372749981d14d1a0">
+        <dex dex="F:\Proyectos\Android\Poli_MobileV2.0\app\build\intermediates\pre-dexed\debug\classes-6fdb49ca2518c8efae2ab843c53e90df5ae59735.jar" />
     </item>
 
 </items>

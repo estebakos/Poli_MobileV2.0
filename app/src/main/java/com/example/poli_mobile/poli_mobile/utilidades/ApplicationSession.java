@@ -6,6 +6,7 @@ import com.example.poli_mobile.poli_mobile.listeners.LoginListenerTwo;
 import com.example.poli_mobile.poli_mobile.listeners.loginTeacherListener;
 import com.example.poli_mobile.poli_mobile_entidades.Facultad;
 import com.example.poli_mobile.poli_mobile_entidades.Programa;
+import com.example.poli_mobile.poli_mobile_entidades.asesoriaAcademica;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,6 +22,16 @@ public class ApplicationSession {
 	private static Facultad facultad = null;
 	private static List<Programa> programas = new ArrayList<>();
 	private static Programa programa;
+	private static List<asesoriaAcademica> asesoria;
+	private static String type;
+
+	public static String getType() {
+		return type;
+	}
+
+	public static void setType(String type) {
+		ApplicationSession.type = type;
+	}
 
 	public static Programa getPrograma() {
 		return programa;
@@ -72,5 +83,13 @@ public class ApplicationSession {
 
 	public static String getToken() {
 		return token;
+	}
+
+	public static void setAsesoria(List<asesoriaAcademica> asesoria) {
+		ApplicationSession.asesoria = asesoria;
+	}
+
+	public static List<asesoriaAcademica> getAsesoria() {
+		return asesoria;
 	}
 }

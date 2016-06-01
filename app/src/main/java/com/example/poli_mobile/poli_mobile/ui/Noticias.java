@@ -48,7 +48,8 @@ public class Noticias extends android.support.v4.app.Fragment {
 			ApplicationSession.rlayout.setBackgroundColor(Color.parseColor("#607d8b"));
 		}
 		//http://politecnicojic.edu.co/index.php?option=com_content&view=category&layout=blog&id=35&Itemid=335&format=feed&type=rss
-		ruta = "http://www.mecd.gob.es/rss/actualidad";
+		ruta = "" +
+				"http://www.mecd.gob.es/rss/actualidad";
 		lvNoticias = (ListView)v.findViewById(id.lvNoticias);
 		Array_Noticias = new ArrayList<Noticia>();
 		if (isOnline()) {

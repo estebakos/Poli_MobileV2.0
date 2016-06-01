@@ -39,11 +39,10 @@
 
             android:title="Horario de Clase" />
 
-<!--        <item
+        <item
             android:id="@+id/nav_asesoria"
             android:checked="true"
-            android:icon="@drawable/ic_news"
-            android:title="Asesoría Académica" />-->
+            android:title="Asesoría Académica" />
 
         <item
             android:id="@+id/nav_notas"
@@ -69,23 +68,20 @@
 
             android:title="Lista de Clase" />
 
-     <!--   <item
+        <item
             android:id="@+id/nav_evaluacion"
             android:checked="true"
             android:icon="@drawable/ic_news"
-            android:title="Evaluación Docente" />-->
-
+            android:title="Auto Evaluación" />
 
         <item
             android:id="@+id/nav_acerca"
             android:checked="true"
-
             android:title="Acerca del Poli" />
 
         <item
             android:id="@+id/nav_about"
             android:checked="true"
-
             android:title="Acerca de" />
 
 

@@ -11,33 +11,31 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.poli_mobile.R;
-import com.example.poli_mobile.poli_mobile.listeners.CitaListener;
-import com.example.poli_mobile.poli_mobile.listeners.ParcialListener;
+import com.example.poli_mobile.poli_mobile.listeners.AutoEvalListener;
 import com.example.poli_mobile.poli_mobile.network.NetworkManager;
 import com.example.poli_mobile.poli_mobile.utilidades.AppContext;
-import com.example.poli_mobile.poli_mobile_entidades.CitaMedica;
-import com.example.poli_mobile.poli_mobile_entidades.ProgramacionParcial;
+import com.example.poli_mobile.poli_mobile_entidades.AutoevalacionDocente;
 
 import java.util.List;
 
 /**
  * Created by TEBAN on 8/04/2016.
  */
-public class ParcialesFragment extends Fragment implements ParcialListener {
+public class AutoEvaluacionFragment extends Fragment implements AutoEvalListener {
 
     private RecyclerView recyclerView;
-    private ParcialesAdapter parcialesAdapter;
+    private AutoEvalAdapter autoEvalAdapter;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_parciales, container, false);
+        return inflater.inflate(R.layout.fragment_eval_docentes, container, false);
     }
 
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        recyclerView = (RecyclerView) view.findViewById(R.id.rvTrends);
+        recyclerView = (RecyclerView) view.findViewById(R.id.rvEvalDocentes);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(AppContext.getContext()));
     }
@@ -45,9 +43,9 @@ public class ParcialesFragment extends Fragment implements ParcialListener {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        NetworkManager.getNManagerInstance().setParcialListener(this);
+        NetworkManager.getNManagerInstance().setAutoEvalListener(this);
 
-        NetworkManager.getNManagerInstance().obtenerParciales();
+        NetworkManager.getNManagerInstance().obtenerAutoEvaluacion();
     }
 
     @Override
@@ -62,15 +60,15 @@ public class ParcialesFragment extends Fragment implements ParcialListener {
 
 
     @Override
-    public void ParcialListo(List<ProgramacionParcial> lCita) {
+    public void AutoEvalLista(List<AutoevalacionDocente> lCita) {
         if(lCita != null && lCita.size() >0){
-            parcialesAdapter = new ParcialesAdapter(lCita);
-            recyclerView.setAdapter(parcialesAdapter);
+            autoEvalAdapter = new AutoEvalAdapter(lCita);
+            recyclerView.setAdapter(autoEvalAdapter);
         }
     }
 
     @Override
-    public void ParcialFallido() {
+    public void AutoEvalProblema() {
 
     }
 }

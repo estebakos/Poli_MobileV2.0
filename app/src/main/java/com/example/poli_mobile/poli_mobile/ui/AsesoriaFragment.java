@@ -11,27 +11,26 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.poli_mobile.R;
-import com.example.poli_mobile.poli_mobile.listeners.CitaListener;
-import com.example.poli_mobile.poli_mobile.listeners.ParcialListener;
+import com.example.poli_mobile.poli_mobile.listeners.AsesorialListener;
 import com.example.poli_mobile.poli_mobile.network.NetworkManager;
 import com.example.poli_mobile.poli_mobile.utilidades.AppContext;
-import com.example.poli_mobile.poli_mobile_entidades.CitaMedica;
-import com.example.poli_mobile.poli_mobile_entidades.ProgramacionParcial;
+import com.example.poli_mobile.poli_mobile_entidades.asesoriaAcademica;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Created by TEBAN on 8/04/2016.
  */
-public class ParcialesFragment extends Fragment implements ParcialListener {
+public class AsesoriaFragment extends Fragment implements AsesorialListener {
 
     private RecyclerView recyclerView;
-    private ParcialesAdapter parcialesAdapter;
+    private AsesoriaAdapter asesoriaAdapter;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_parciales, container, false);
+        return inflater.inflate(R.layout.fragment_asesoria, container, false);
     }
 
     @Override
@@ -45,9 +44,8 @@ public class ParcialesFragment extends Fragment implements ParcialListener {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        NetworkManager.getNManagerInstance().setParcialListener(this);
-
-        NetworkManager.getNManagerInstance().obtenerParciales();
+        NetworkManager.getNManagerInstance().setAsesorialListener(this);
+        NetworkManager.getNManagerInstance().obtenerAsesoria();
     }
 
     @Override
@@ -62,15 +60,30 @@ public class ParcialesFragment extends Fragment implements ParcialListener {
 
 
     @Override
-    public void ParcialListo(List<ProgramacionParcial> lCita) {
-        if(lCita != null && lCita.size() >0){
-            parcialesAdapter = new ParcialesAdapter(lCita);
-            recyclerView.setAdapter(parcialesAdapter);
+    public void Asesoria(List<asesoriaAcademica> lCita) {
+        if (lCita != null && lCita.size() > 0) {
+            List<asesoriaAcademica> newAsesoria = new ArrayList<>();
+            for (asesoriaAcademica a : lCita) {
+                boolean exists = false;
+                for(asesoriaAcademica b : newAsesoria)
+                {
+                    if(a.getCodigoMateria().equals(b.getCodigoMateria()))
+                    {
+                        exists = true;
+                    }
+                }
+                if(exists == false)
+                {
+                    newAsesoria.add(a);
+                }
+            }
+            asesoriaAdapter = new AsesoriaAdapter(newAsesoria, lCita);
+            recyclerView.setAdapter(asesoriaAdapter);
         }
     }
 
     @Override
-    public void ParcialFallido() {
+    public void AsesoriaFail() {
 
     }
 }

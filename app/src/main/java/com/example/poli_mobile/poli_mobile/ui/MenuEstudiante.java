@@ -16,6 +16,7 @@ import android.widget.TextView;
 
 import com.example.poli_mobile.R;
 import com.example.poli_mobile.poli_mobile.utilidades.AppContext;
+import com.example.poli_mobile.poli_mobile.utilidades.ApplicationSession;
 import com.example.poli_mobile.poli_mobile.utilidades.PoliPreferences;
 
 import java.util.List;
@@ -127,8 +128,25 @@ public class MenuEstudiante extends AppCompatActivity {
                         .commit();
                 setTitle(title); // Setear título actual
                 break;
+            case "Lista de Clase":
+                fragment = new ListadoClasesFragment();
+                args.putString(Noticias.ARG_SECTION_TITLE, title);
+                getSupportFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.main_content, fragment)
+                        .commit();
+                setTitle(title); // Setear título actual
+                break;
             case "Citas Médicas":
                 fragment =  new CitasFragment();
+                getSupportFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.main_content, fragment)
+                        .commit();
+                setTitle(title); // Setear título actual
+                break;
+            case "Auto Evaluación":
+                fragment =  new AutoEvaluacionFragment();
                 getSupportFragmentManager()
                         .beginTransaction()
                         .replace(R.id.main_content, fragment)
@@ -175,6 +193,30 @@ public class MenuEstudiante extends AppCompatActivity {
                         .commit();
                 setTitle(title); // Setear título actual
                 break;
+            case "Asesoría Académica":
+                fragment =  new AsesoriaFragment();
+                getSupportFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.main_content, fragment)
+                        .commit();
+                setTitle(title); // Setear título actual
+                break;
+            case "Acerca del Poli":
+                fragment =  new AcercaDeActivity();
+                getSupportFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.main_content, fragment)
+                        .commit();
+                setTitle(title); // Setear título actual
+                break;
+            case "Recibos de Pago":
+                fragment =  new ComprobanteFragment();
+                getSupportFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.main_content, fragment)
+                        .commit();
+                setTitle(title); // Setear título actual
+                break;
             default:
                 fragment = Noticias.newInstance(title);
                 args.putString(Noticias.ARG_SECTION_TITLE, title);
@@ -200,6 +242,10 @@ public class MenuEstudiante extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         if (!drawerLayout.isDrawerOpen(GravityCompat.START)) {
             getMenuInflater().inflate(R.menu.menu, menu);
+            if(ApplicationSession.getType().equals("3"))
+            {
+
+            }
             return true;
         }
         return super.onCreateOptionsMenu(menu);

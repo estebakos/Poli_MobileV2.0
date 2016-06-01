@@ -20,6 +20,7 @@ import android.widget.Toast;
 import com.example.poli_mobile.R;
 import com.example.poli_mobile.poli_mobile.network.NetworkManager;
 import com.example.poli_mobile.poli_mobile.utilidades.AppContext;
+import com.example.poli_mobile.poli_mobile.utilidades.ApplicationSession;
 import com.example.poli_mobile.poli_mobile.utilidades.PoliPreferences;
 import com.example.poli_mobile.poli_mobile_entidades.CitaMedica;
 
@@ -30,7 +31,7 @@ import java.util.List;
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener, NetworkUiListener {
 
     private EditText etDomain, etUser, etPassword;
-    private Button btnSignIn;
+    private Button btnSignIn, btnInvitado;
     private CheckBox chkRememberPassword;
     private NetworkManager nManager;
     private PoliPreferences _axPrefs;
@@ -49,8 +50,10 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         nManager.addNetworkUiListener(this);
 
         btnSignIn = (Button) findViewById(R.id.btnSignIn);
+        btnInvitado = (Button) findViewById(R.id.btnInvitado);
 
         btnSignIn.setOnClickListener(this);
+        btnInvitado.setOnClickListener(this);
 
         etDomain = (EditText) findViewById(R.id.etLoginDate);
         etUser = (EditText) findViewById(R.id.etLoginUser);
@@ -133,6 +136,12 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         switch (v.getId()) {
             case R.id.btnSignIn:
                 Authenticate();
+                break;
+            case R.id.btnInvitado:
+                ApplicationSession.setType("2");
+                Intent mainIntent = new Intent().setClass(LoginActivity.this, MenuEstudiante  .class);
+                startActivity(mainIntent);
+                finish();
                 break;
             default:
                 break;

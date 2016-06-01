@@ -1,7 +1,11 @@
 package com.example.poli_mobile.poli_mobile.network;
 
+import com.example.poli_mobile.poli_mobile.listeners.AcercaDeListener;
+import com.example.poli_mobile.poli_mobile.listeners.AsesorialListener;
+import com.example.poli_mobile.poli_mobile.listeners.AutoEvalListener;
 import com.example.poli_mobile.poli_mobile.listeners.CalendarioListener;
 import com.example.poli_mobile.poli_mobile.listeners.CitaListener;
+import com.example.poli_mobile.poli_mobile.listeners.ComprobantelListener;
 import com.example.poli_mobile.poli_mobile.listeners.FacultadesListener;
 import com.example.poli_mobile.poli_mobile.listeners.HorarioListener;
 import com.example.poli_mobile.poli_mobile.listeners.IPoliWebService;
@@ -12,13 +16,17 @@ import com.example.poli_mobile.poli_mobile.ui.NetworkUiListener;
 import com.example.poli_mobile.poli_mobile.utilidades.AppContext;
 import com.example.poli_mobile.poli_mobile.utilidades.ApplicationSession;
 import com.example.poli_mobile.poli_mobile.utilidades.PoliPreferences;
+import com.example.poli_mobile.poli_mobile_entidades.AcercaDe;
+import com.example.poli_mobile.poli_mobile_entidades.AutoevalacionDocente;
 import com.example.poli_mobile.poli_mobile_entidades.CalendarioAcademico;
 import com.example.poli_mobile.poli_mobile_entidades.CitaMedica;
+import com.example.poli_mobile.poli_mobile_entidades.ComprobantePago;
 import com.example.poli_mobile.poli_mobile_entidades.Facultad;
 import com.example.poli_mobile.poli_mobile_entidades.HorarioSemestreActual;
 import com.example.poli_mobile.poli_mobile_entidades.ListaMateria;
 import com.example.poli_mobile.poli_mobile_entidades.NotaMateria;
 import com.example.poli_mobile.poli_mobile_entidades.ProgramacionParcial;
+import com.example.poli_mobile.poli_mobile_entidades.asesoriaAcademica;
 import com.example.poli_mobile.poli_mobile_ws.PoliWebService;
 
 import java.util.ArrayList;
@@ -38,6 +46,35 @@ public class NetworkManager implements IPoliWebService {
     private NotasListener notasListener;
     private ListadorMateriaListener listadorMateriaListener;
     private ParcialListener parcialListener;
+    private AcercaDeListener acercaDeListener;
+    private ComprobantelListener comprobantelListener;
+    private AsesorialListener asesorialListener;
+
+    public AsesorialListener getAsesorialListener() {
+        return asesorialListener;
+    }
+
+    public void setAsesorialListener(AsesorialListener asesorialListener) {
+        this.asesorialListener = asesorialListener;
+    }
+
+    public void setComprobantelListener(ComprobantelListener comprobantelListener) {
+        this.comprobantelListener = comprobantelListener;
+    }
+
+    public void setAutoEvalListener(AutoEvalListener autoEvalListener) {
+        this.autoEvalListener = autoEvalListener;
+    }
+
+    private AutoEvalListener autoEvalListener;
+
+    public AcercaDeListener getAcercaDeListener() {
+        return acercaDeListener;
+    }
+
+    public void setAcercaDeListener(AcercaDeListener acercaDeListener) {
+        this.acercaDeListener = acercaDeListener;
+    }
 
     public ParcialListener getParcialListener() {
         return parcialListener;
@@ -150,6 +187,10 @@ public class NetworkManager implements IPoliWebService {
         webService.getListadoClase(ApplicationSession.getToken());
     }
 
+    public void getAcercaDe() {
+        webService.getAcercaDe(ApplicationSession.getToken());
+    }
+
     @Override
     public void onInternetFail() {
          //  showTooltip("No se detecta conexión a ninguna red wi-fi o ethernet, mientras encontramos alguna, estarás en modo offline.");
@@ -189,7 +230,8 @@ public class NetworkManager implements IPoliWebService {
 
     @Override
     public void onAuthenticate(String token) {
-        ApplicationSession.setToken(token);
+        ApplicationSession.setToken(token.split(",")[0]);
+        ApplicationSession.setType(token.split(",")[1]);
         for(NetworkUiListener networkUiListener : nUiListener) {
             networkUiListener.onAuthenticate();
         }
@@ -269,4 +311,48 @@ public class NetworkManager implements IPoliWebService {
         }
     }
 
+    @Override
+    public void AcercaDe(List<AcercaDe> webServiceEntity) {
+        if(acercaDeListener != null)
+        {
+            acercaDeListener.AcercaDeListo(webServiceEntity);
+        }
+    }
+
+    @Override
+    public void onAutoEvalDocente(List<AutoevalacionDocente> lEvalDocente) {
+        if(autoEvalListener != null)
+        {
+            autoEvalListener.AutoEvalLista(lEvalDocente);
+        }
+    }
+
+    @Override
+    public void Comprobante(List<ComprobantePago> webServiceEntity) {
+        if(comprobantelListener!= null)
+        {
+            comprobantelListener.Comprobante(webServiceEntity);
+        }
+    }
+
+    @Override
+    public void Asesoria(List<asesoriaAcademica> webServiceEntity) {
+        if(asesorialListener != null)
+        {
+            asesorialListener.Asesoria(webServiceEntity);
+        }
+    }
+
+    public void obtenerAutoEvaluacion() {
+        webService.getAutoEvalDocente(ApplicationSession.getToken());
+    }
+
+    public void obtenerComprobante() {
+        webService.getComprobante(ApplicationSession.getToken());
+    }
+
+    public void obtenerAsesoria() {
+        webService.getAsesoria(ApplicationSession.getToken());
+    }
 }
+

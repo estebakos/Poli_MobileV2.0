@@ -9,14 +9,18 @@ import com.example.poli_mobile.poli_mobile.network.SOAPHandler;
 import com.example.poli_mobile.poli_mobile.network.SOAPListener;
 import com.example.poli_mobile.poli_mobile.utilidades.ApplicationSession;
 import com.example.poli_mobile.poli_mobile.utilidades.PoliPreferences;
+import com.example.poli_mobile.poli_mobile_entidades.AcercaDe;
+import com.example.poli_mobile.poli_mobile_entidades.AutoevalacionDocente;
 import com.example.poli_mobile.poli_mobile_entidades.CalendarioAcademico;
 import com.example.poli_mobile.poli_mobile_entidades.CitaMedica;
+import com.example.poli_mobile.poli_mobile_entidades.ComprobantePago;
 import com.example.poli_mobile.poli_mobile_entidades.Facultad;
 import com.example.poli_mobile.poli_mobile_entidades.HorarioSemestreActual;
 import com.example.poli_mobile.poli_mobile_entidades.ListaMateria;
 import com.example.poli_mobile.poli_mobile_entidades.NotaMateria;
 import com.example.poli_mobile.poli_mobile_entidades.Programa;
 import com.example.poli_mobile.poli_mobile_entidades.ProgramacionParcial;
+import com.example.poli_mobile.poli_mobile_entidades.asesoriaAcademica;
 
 import org.apache.http.HttpStatus;
 import org.ksoap2.serialization.SoapObject;
@@ -343,6 +347,67 @@ public class PoliWebService {
         }
     }
 
+    public void getAutoEvalDocente(String token) {
+        try {
+            if (token == null) {
+                //TODO En este caso deberia de solicitar nuevamente el Registro del aplicativo
+                _IWebService.onUnauthorized();
+                return;
+            }
+
+            if (!isNetworkAvailable()) {
+                _IWebService.onInternetFail();
+            } else {
+                if (getRestUrl() != "") {
+                    SOAPHandler httpGet = new SOAPHandler(getRestUrl(),
+                            "WS_Docente?wsdl", getNameSpace(), "Traer_ResultadoAutoevaluacionDocente", new SOAPListener() {
+
+                        @Override
+                        public void onRequestFinish(
+                                Object SOAPResponse) {
+                            Vector<SoapObject> result = null;
+                            if (SOAPResponse instanceof SoapObject) {
+                                result = new Vector();
+                                result.add((SoapObject) SOAPResponse);
+                            } else if (SOAPResponse instanceof Vector) {
+                                result = (Vector<SoapObject>) SOAPResponse;
+                            }
+
+                            List<AutoevalacionDocente> lEvalDocente = new ArrayList<AutoevalacionDocente>();
+                            if (result != null) {
+                                for (SoapObject soap : result) {
+                                    try {
+                                        AutoevalacionDocente wse = new AutoevalacionDocente();
+                                        wse.setAnio(soap.getPropertyAsString("anio"));
+                                        wse.setSemestre(soap.getPropertyAsString("semestre"));
+                                        wse.setCodigoMateria(soap.getPropertyAsString("codigoMateria"));
+                                        wse.setGrupoMateria(soap.getPropertyAsString("grupoMateria"));
+                                        wse.setNotaMateria(soap.getPropertyAsString("notaMateria"));
+                                        wse.setNombreMateria(soap.getPropertyAsString("nombreMateria"));
+                                        lEvalDocente.add(wse);
+                                    } catch (Exception ex) {
+                                        ex.printStackTrace();
+                                    }
+
+                                }
+                                _IWebService.onAutoEvalDocente(lEvalDocente);
+                            }
+                        }
+
+                    });
+
+                    httpGet.addSOAPParam("Session_Id", token);
+                    httpGet.ExecuteSOAP();
+                } else {
+                    _IWebService.onUnexpectedError();
+                }
+            }
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+    }
+
+
     public void getHorario(String token, final String dia) {
         try {
             if (token == null) {
@@ -516,6 +581,190 @@ public class PoliWebService {
         }
     }
 
+
+    public void getAcercaDe(String token) {
+        try {
+            if (token == null) {
+                //TODO En este caso deberia de solicitar nuevamente el Registro del aplicativo
+                _IWebService.onUnauthorized();
+                return;
+            }
+
+            if (!isNetworkAvailable()) {
+                _IWebService.onInternetFail();
+            } else {
+                if (getRestUrl() != "") {
+                    SOAPHandler httpGet = new SOAPHandler(getRestUrl(),
+                            "WS_General?wsdl", getNameSpace(), "Traer_AcercaDe", new SOAPListener() {
+
+                        @Override
+                        public void onRequestFinish(
+                                Object SOAPResponse) {
+                            Vector<SoapObject> result = null;
+                            if (SOAPResponse instanceof SoapObject) {
+                                result = new Vector();
+                                result.add((SoapObject) SOAPResponse);
+                            } else if (SOAPResponse instanceof Vector) {
+                                result = (Vector<SoapObject>) SOAPResponse;
+                            }
+
+                            List<AcercaDe> webServiceEntity = new ArrayList<AcercaDe>();
+                            if (result != null) {
+                                for (SoapObject soap : result) {
+                                    AcercaDe wse = new AcercaDe();
+                                    wse.setBanderaInstitucion(soap.getPropertyAsString("banderaInstitucion"));
+                                    wse.setDniUniversidad(soap.getPropertyAsString("dniUniversidad"));
+                                    wse.setEscudo(soap.getPropertyAsString("escudo"));
+                                    wse.setHimnoInstitucion(soap.getPropertyAsString("himnoInstitucion"));
+                                    wse.setPresentacion(soap.getPropertyAsString("presentacion"));
+                                    wse.setHistoria(soap.getPropertyAsString("historia"));
+                                    wse.setMision(soap.getPropertyAsString("mision"));
+                                    wse.setVision(soap.getPropertyAsString("vision"));
+                                    webServiceEntity.add(wse);
+
+                                }
+                                _IWebService.AcercaDe(webServiceEntity);
+                            }
+                        }
+
+                    });
+
+                    httpGet.addSOAPParam("Session_Id", token);
+                    httpGet.ExecuteSOAP();
+                } else {
+                    _IWebService.onUnexpectedError();
+                }
+            }
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+    }
+
+    public void getComprobante(String token) {
+        try {
+            if (token == null) {
+                //TODO En este caso deberia de solicitar nuevamente el Registro del aplicativo
+                _IWebService.onUnauthorized();
+                return;
+            }
+
+            if (!isNetworkAvailable()) {
+                _IWebService.onInternetFail();
+            } else {
+                if (getRestUrl() != "") {
+                    SOAPHandler httpGet = new SOAPHandler(getRestUrl(),
+                            "WS_Docente?wsdl", getNameSpace(), "Traer_ComprobantesPago", new SOAPListener() {
+
+                        @Override
+                        public void onRequestFinish(
+                                Object SOAPResponse) {
+                            Vector<SoapObject> result = null;
+                            if (SOAPResponse instanceof SoapObject) {
+                                result = new Vector();
+                                result.add((SoapObject) SOAPResponse);
+                            } else if (SOAPResponse instanceof Vector) {
+                                result = (Vector<SoapObject>) SOAPResponse;
+                            }
+
+                            List<ComprobantePago> webServiceEntity = new ArrayList<ComprobantePago>();
+                            if (result != null) {
+                                for (SoapObject soap : result) {
+                                    ComprobantePago wse = new ComprobantePago();
+                                    wse.setAnio(soap.getPropertyAsString("anio"));
+                                    wse.setBanco(soap.getPropertyAsString("banco"));
+                                    wse.setBasicoDia(soap.getPropertyAsString("basicoDia"));
+                                    wse.setCargoDocente(soap.getPropertyAsString("cargoDocente"));
+                                    wse.setCedulaDocente(soap.getPropertyAsString("cedulaDocente"));
+                                    wse.setConcepto(soap.getPropertyAsString("concepto"));
+                                    wse.setFechaPago(soap.getPropertyAsString("fechaPago"));
+                                    wse.setHoras_dias(soap.getPropertyAsString("horas_dias"));
+                                    wse.setNumeroCuenta(soap.getPropertyAsString("numeroCuenta"));
+                                    wse.setQuincena(soap.getPropertyAsString("quincena"));
+                                    wse.setValorDeduccion(soap.getPropertyAsString("valorDeduccion"));
+                                    wse.setValorDevengado(soap.getPropertyAsString("valorDevengado"));
+                                    wse.setValorPagado(soap.getPropertyAsString("valorPagado"));
+                                    webServiceEntity.add(wse);
+
+                                }
+                                _IWebService.Comprobante(webServiceEntity);
+                            }
+                        }
+
+                    });
+
+                    httpGet.addSOAPParam("id_session", token);
+                    httpGet.ExecuteSOAP();
+                } else {
+                    _IWebService.onUnexpectedError();
+                }
+            }
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+    }
+
+    public void getAsesoria(String token) {
+        try {
+            if (token == null) {
+                //TODO En este caso deberia de solicitar nuevamente el Registro del aplicativo
+                _IWebService.onUnauthorized();
+                return;
+            }
+
+            if (!isNetworkAvailable()) {
+                _IWebService.onInternetFail();
+            } else {
+                if (getRestUrl() != "") {
+                    SOAPHandler httpGet = new SOAPHandler(getRestUrl(),
+                            "WS_Estudiante?wsdl", getNameSpace(), "Traer_AsesoriaAcademica", new SOAPListener() {
+
+                        @Override
+                        public void onRequestFinish(
+                                Object SOAPResponse) {
+                            Vector<SoapObject> result = null;
+                            if (SOAPResponse instanceof SoapObject) {
+                                result = new Vector();
+                                result.add((SoapObject) SOAPResponse);
+                            } else if (SOAPResponse instanceof Vector) {
+                                result = (Vector<SoapObject>) SOAPResponse;
+                            }
+
+                            List<asesoriaAcademica> webServiceEntity = new ArrayList<asesoriaAcademica>();
+                            if (result != null) {
+                                for (SoapObject soap : result) {
+                                    asesoriaAcademica wse = new asesoriaAcademica();
+                                    wse.setCedulaDocente(soap.getPropertyAsString("cedulaDocente"));
+                                    wse.setGrupoMateria(soap.getPropertyAsString("grupoMateria"));
+                                    wse.setAula(soap.getPropertyAsString("aula"));
+                                    wse.setCodigoMateria(soap.getPropertyAsString("codigoMateria"));
+                                    wse.setCreditos(soap.getPropertyAsString("creditos"));
+                                    wse.setDia(soap.getPropertyAsString("dia"));
+                                    wse.setHorario(soap.getPropertyAsString("horario"));
+                                    wse.setMarcacion(soap.getPropertyAsString("marcacion"));
+                                    wse.setNombreDocente(soap.getPropertyAsString("nombreDocente"));
+                                    wse.setSede(soap.getPropertyAsString("sede"));
+                                    wse.setTipoMateria(soap.getPropertyAsString("tipoMateria"));
+                                    wse.setNombreMateria(soap.getPropertyAsString("nombreMateria"));
+                                    webServiceEntity.add(wse);
+
+                                }
+                                _IWebService.Asesoria(webServiceEntity);
+                            }
+                        }
+
+                    });
+
+                    httpGet.addSOAPParam("Session_Id", token);
+                    httpGet.ExecuteSOAP();
+                } else {
+                    _IWebService.onUnexpectedError();
+                }
+            }
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+    }
+
     public void Login(String user, String password) {
         try {
 
@@ -524,7 +773,7 @@ public class PoliWebService {
             } else {
                 if (getRestUrl() != "") {
                     SOAPHandler httpGet = new SOAPHandler(getRestUrl(),
-                            "WS_Estudiante?wsdl", getNameSpace(), "getId_Session_Estudiante", new SOAPListener() {
+                            "WS_General?wsdl", getNameSpace(), "getid_session", new SOAPListener() {
 
                         @Override
                         public void onRequestFinish(

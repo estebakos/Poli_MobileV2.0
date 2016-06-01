@@ -5,6 +5,11 @@
       <config />
     </shared>
     <layouts>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_acerca_de.xml">
+        <config>
+          <theme>@android:style/Theme.Material.Light</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_facultad.xml">
         <config>
           <theme>@android:style/Theme.Light</theme>
@@ -35,7 +40,22 @@
           <theme>@android:style/Theme.Light</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_recibo.xml">
+        <config>
+          <theme>@android:style/Theme.Holo.Light</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/horarioitem.xml">
+        <config>
+          <theme>@android:style/Theme.Holo.Light</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/list_asesoria.xml">
+        <config>
+          <theme>@android:style/Theme.Holo.Light</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/list_asesoria_detalle.xml">
         <config>
           <theme>@android:style/Theme.Holo.Light</theme>
         </config>
@@ -67,60 +87,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="153eaaa6-e751-4050-b3b9-96936f58197f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_22_2_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/cardview_v7_21_0_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/circleimageview_1_3_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/recyclerview_v7_21_0_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/support_annotations_22_2_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/support_v4_22_2_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/listeners/CalendarioListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/listeners/FacultadesListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/listeners/ParcialListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/CalendarioFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/CalendarioListAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/CitasAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/CitasFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/FacultadActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/FacultadesFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/FacultadesListAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/ParcialesAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/ParcialesFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/ProgramaActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/ProgramasActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/ProgramasListAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile_entidades/AcercaDe.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile_entidades/CalendarioAcademico.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile_entidades/ProgramacionParcial.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_facultad.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_programa.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_programas.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/card_calendario_list_view.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/card_calendario_title_list_view.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/card_facultades_list_view.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/card_programas_list_view.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_calendario_academico.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_cita_medica.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_noticias.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_parciales.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/list_cita_medica.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/list_parciales.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_navigation_drawer.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/library_1_1_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/library_2_4_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/picasso_2_5_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_annotations_20_0_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_20_0_0.xml" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/listeners/AcercaDeListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/listeners/AsesorialListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/listeners/AutoEvalListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/listeners/ComprobantelListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/AcercaDeActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/AsesoriaActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/AsesoriaAdapter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/AsesoriaFragment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/Asesoria_DtlAdapter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/AutoEvalAdapter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/AutoEvaluacionFragment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/ComprobanteFragment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile_entidades/AutoevalacionDocente.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile_entidades/ComprobantePago.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile_entidades/asesoriaAcademica.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_acerca_de.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_asesoria_dtl.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_asesoria.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_eval_docentes.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_recibo.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/list_asesoria.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/list_asesoria_detalle.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/list_autoevaluacion.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/outputFileStates.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/jsoup_1_8_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/jsoup_1_8_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Poli_MobileV2.0.iml" afterPath="$PROJECT_DIR$/Poli_MobileV2.0.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v7/appcompat/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v7/appcompat/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/example/poli_mobile/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/example/poli_mobile/R.java" />
@@ -130,45 +125,17 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/listeners/IPoliWebService.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/listeners/IPoliWebService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/network/NetworkManager.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/network/NetworkManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/DomingoFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/DomingoFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/HorarioFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/HorarioFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/JuevesFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/JuevesFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/ListadoClasesFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/ListadoClasesFragment.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/LoginActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/LoginActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/LunesFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/LunesFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/MartesFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/MartesFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/MiercolesFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/MiercolesFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/NavigationDrawerFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/NavigationDrawerFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/NotasFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/NotasFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/SabadoFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/SabadoFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/SplashActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/SplashActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/ViernesFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/ViernesFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/MenuEstudiante.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/MenuEstudiante.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/Noticias.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/Noticias.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/ParcialesFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/ParcialesFragment.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/utilidades/ApplicationSession.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/utilidades/ApplicationSession.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile_adaptadores/HorarioAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile_adaptadores/HorarioAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile_adaptadores/ListaMateriaAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile_adaptadores/ListaMateriaAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile_adaptadores/NotasAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile_adaptadores/NotasAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile_entidades/Programa.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile_entidades/Programa.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile_ws/PoliWebService.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile_ws/PoliWebService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-v21/raised_button_background.xml" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v21/raised_button_background.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/raised_button_background.xml" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/raised_button_background.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/horarioitem.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/horarioitem.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/list_horario.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/list_horario.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/list_materias.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/list_materias.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/list_notas.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/list_notas.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/materia_item.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/materia_item.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/nav_header.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/nav_header.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/navigation_main_include.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/navigation_main_include.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/nota_item.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/nota_item.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/menu/menu.xml" afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values-v11/styles.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values-v11/styles.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values-v14/styles.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values-v14/styles.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values-w820dp/dimens.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values-w820dp/dimens.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/menu/menu_navigation_drawer.xml" afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_navigation_drawer.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_20_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/design_22_2_0.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/Facultades.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/Noticias.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/Menu.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/MenuEstudiante.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/res/layout/facultades.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_facultades.xml" />
     </list>
     <ignored path="Poli_Mobile.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -219,158 +186,107 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PoliWebService.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile_ws/PoliWebService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3309859">
-              <caret line="270" column="0" selection-start-line="270" selection-start-column="0" selection-end-line="270" selection-end-column="0" />
-              <folding>
-                <element signature="e#3539#3549#0" expanded="true" />
-                <element signature="e#4543#4553#0" expanded="true" />
-                <element signature="e#9362#9374#0" expanded="true" />
-                <element signature="e#11795#13762#0" expanded="true" />
-                <element signature="e#12476#12497#0" expanded="true" />
-                <element signature="e#13761#13762#0" expanded="true" />
-                <element signature="e#15339#15360#0" expanded="true" />
-                <element signature="e#17306#19594#0" expanded="true" />
-                <element signature="e#19593#19594#0" expanded="true" />
-                <element signature="e#20496#22253#0" expanded="true" />
-                <element signature="e#22252#22253#0" expanded="true" />
-                <element signature="e#23150#24662#0" expanded="true" />
-                <element signature="e#24661#24662#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AcercaDe.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile_entidades/AcercaDe.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="74" column="49" selection-start-line="74" selection-start-column="49" selection-end-line="74" selection-end-column="49" />
-              <folding>
-                <element signature="e#471#472#0" expanded="true" />
-                <element signature="e#523#524#0" expanded="true" />
-                <element signature="e#562#563#0" expanded="true" />
-                <element signature="e#597#598#0" expanded="true" />
-                <element signature="e#653#654#0" expanded="true" />
-                <element signature="e#701#702#0" expanded="true" />
-                <element signature="e#736#737#0" expanded="true" />
-                <element signature="e#767#768#0" expanded="true" />
-                <element signature="e#815#816#0" expanded="true" />
-                <element signature="e#855#856#0" expanded="true" />
-                <element signature="e#888#889#0" expanded="true" />
-                <element signature="e#917#918#0" expanded="true" />
-                <element signature="e#961#962#0" expanded="true" />
-                <element signature="e#997#998#0" expanded="true" />
-                <element signature="e#1030#1031#0" expanded="true" />
-                <element signature="e#1059#1060#0" expanded="true" />
-                <element signature="e#1103#1104#0" expanded="true" />
-                <element signature="e#1139#1140#0" expanded="true" />
-                <element signature="e#1172#1173#0" expanded="true" />
-                <element signature="e#1201#1202#0" expanded="true" />
-                <element signature="e#1245#1246#0" expanded="true" />
-                <element signature="e#1281#1282#0" expanded="true" />
-                <element signature="e#1326#1327#0" expanded="true" />
-                <element signature="e#1367#1368#0" expanded="true" />
-                <element signature="e#1538#1539#0" expanded="true" />
-                <element signature="e#1577#1578#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ApplicationSession.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/utilidades/ApplicationSession.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
-              <folding>
-                <element signature="e#1990#1991#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IPoliWebService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/listeners/IPoliWebService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="26" column="59" selection-start-line="26" selection-start-column="59" selection-end-line="26" selection-end-column="59" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="list_parciales.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/list_parciales.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="19.472727">
-              <caret line="33" column="59" selection-start-line="33" selection-start-column="59" selection-end-line="33" selection-end-column="59" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="NetworkManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/network/NetworkManager.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="129" column="0" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
+              <caret line="233" column="56" selection-start-line="233" selection-start-column="56" selection-end-line="233" selection-end-column="56" />
               <folding>
-                <element signature="e#2118#2119#0" expanded="true" />
-                <element signature="e#2156#2157#0" expanded="true" />
-                <element signature="e#2348#2349#0" expanded="true" />
-                <element signature="e#2394#2395#0" expanded="true" />
-                <element signature="e#4650#4651#0" expanded="true" />
+                <element signature="e#2842#2843#0" expanded="true" />
+                <element signature="e#2882#2883#0" expanded="true" />
+                <element signature="e#10744#10745#0" expanded="true" />
+                <element signature="e#10816#10817#0" expanded="true" />
+                <element signature="e#10853#10854#0" expanded="true" />
+                <element signature="e#10922#10923#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ParcialesFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/ParcialesFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ParcialListener.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/listeners/ParcialListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="53" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MenuEstudiante.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MenuEstudiante.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/MenuEstudiante.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="170" column="51" selection-start-line="170" selection-start-column="51" selection-end-line="170" selection-end-column="51" />
+            <state vertical-scroll-proportion="0.43589744">
+              <caret line="246" column="16" selection-start-line="246" selection-start-column="16" selection-end-line="246" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fragment_parciales.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_parciales.xml">
+      <file leaf-file-name="AsesoriaFragment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/AsesoriaFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="4.2">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
               <folding />
             </state>
           </provider>
-          <provider editor-type-id="android-designer">
-            <state />
+        </entry>
+      </file>
+      <file leaf-file-name="AsesoriaAdapter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/AsesoriaAdapter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="60" column="21" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
+              <folding>
+                <element signature="e#1883#2561#0" expanded="true" />
+                <element signature="e#2047#2066#0" expanded="true" />
+                <element signature="e#2560#2561#0" expanded="true" />
+                <element signature="e#2646#2647#0" expanded="true" />
+                <element signature="e#2683#2684#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.14545454">
+              <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+              <folding>
+                <element signature="e#606#624#0" expanded="true" />
+                <element signature="e#736#754#0" expanded="true" />
+                <element signature="e#1111#1129#0" expanded="true" />
+                <element signature="e#1985#2003#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="strings.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="17.773584">
+              <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Asesoria_DtlAdapter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/Asesoria_DtlAdapter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PoliWebService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile_ws/PoliWebService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="502" column="0" selection-start-line="502" selection-start-column="0" selection-end-line="502" selection-end-column="0" />
+              <folding>
+                <element signature="e#18265#18287#0" expanded="true" />
+                <element signature="e#32179#32196#0" expanded="true" />
+                <element signature="e#34774#37052#0" expanded="true" />
+                <element signature="e#35460#35479#0" expanded="true" />
+                <element signature="e#37051#37052#0" expanded="true" />
+              </folding>
+            </state>
           </provider>
         </entry>
       </file>
@@ -379,8 +295,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="layoutResourceFile_vertical" />
         <option value="Class" />
+        <option value="layoutResourceFile_vertical" />
       </list>
     </option>
   </component>
@@ -388,6 +304,11 @@
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="true" />
     </FindUsagesManager>
+  </component>
+  <component name="GenerateSignedApkSettings">
+    <option name="KEY_STORE_PATH" value="C:\Users\TEBAN\Desktop\key_store.jks" />
+    <option name="KEY_ALIAS" value="poli" />
+    <option name="REMEMBER_PASSWORDS" value="true" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -1670,34 +1591,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/FacultadesListAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/ProgramasActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/FacultadActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_facultad.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/card_facultades_list_view.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/card_programas_list_view.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/ProgramaActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_programa.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile_entidades/CalendarioAcademico.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/card_calendario_title_list_view.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_calendario_academico.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/listeners/CalendarioListener.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/CalendarioFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/CalendarioListAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/card_calendario_list_view.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/menu/menu.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/NavigationDrawerFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/HorarioFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/ViernesFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/SabadoFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/LunesFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/JuevesFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/DomingoFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/MartesFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/MiercolesFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile_adaptadores/HorarioAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/list_horario.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/horarioitem.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/nota_item.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/NotasFragment.java" />
@@ -1707,20 +1600,48 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/list_materias.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile_adaptadores/ListaMateriaAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/navigation_main_include.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/menu/menu_navigation_drawer.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/ListadoClasesFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile_entidades/ProgramacionParcial.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/list_parciales.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/ParcialesAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/listeners/ParcialListener.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/listeners/IPoliWebService.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/network/NetworkManager.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/MenuEstudiante.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_parciales.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/ParcialesFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile_entidades/AcercaDe.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/ParcialesFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/listeners/AcercaDeListener.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/AcercaDeActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_acerca_de.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/Noticias.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile_entidades/ComprobantePago.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_eval_docentes.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/listeners/AutoEvalListener.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/list_autoevaluacion.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/AutoEvalAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/AutoEvaluacionFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_recibo.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/listeners/ComprobantelListener.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/ComprobanteFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/listeners/IPoliWebService.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/listeners/AsesorialListener.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_asesoria.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile_entidades/asesoriaAcademica.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile_ws/PoliWebService.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/menu/menu_navigation_drawer.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/list_asesoria.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/list_asesoria_detalle.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/AsesoriaActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/Asesoria_DtlAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/AsesoriaFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/AsesoriaAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/utilidades/ApplicationSession.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/network/NetworkManager.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/raised_button_background.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/drawable-v21/raised_button_background.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/LoginActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/MenuEstudiante.java" />
       </list>
     </option>
   </component>
@@ -1758,20 +1679,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Poli_Mobile" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -1796,6 +1705,10 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="res" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -1832,6 +1745,20 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="layout" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Poli_Mobile" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -1919,6 +1846,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="poli_mobile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utilidades" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -2016,8 +1947,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -2236,6 +2165,20 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Poli_Mobile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2249,27 +2192,30 @@
     <property name="android.project.structure.last.selected" value="app" />
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="last_opened_file_path" value="E:/.Trashes/workspace/Poli_Mobile" />
-    <property name="FullScreen" value="false" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="88AKBME22HB3" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="Nexus_5_API_23_x86" />
     <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.notifications" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="device.picker.selection" value="88AKBME22HB3" />
+    <property name="ExportApk.ApkPath" value="F:\Proyectos\Android\Poli_MobileV2.0\app" />
+    <property name="ExportApk.Flavors" value="" />
+    <property name="ExportApk.BuildType" value="release" />
+    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager2.WIDTH" value="234" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.example.poli_mobile.poli_mobile.listeners" />
       <recent name="com.example.poli_mobile.poli_mobile.ui" />
+      <recent name="com.example.poli_mobile.poli_mobile.listeners" />
       <recent name="com.example.poli_mobile.poli_mobile.utilidades" />
       <recent name="com.example.poli_mobile.poli_mobile.network" />
       <recent name="com.example.poli_mobile.poli_mobile_ws" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\res\layout" />
+      <recent name="F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\java\com\example\poli_mobile\poli_mobile_entidades" />
       <recent name="F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\res\menu" />
       <recent name="F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\java\com\example\poli_mobile\poli_mobile_ws" />
       <recent name="F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\res\drawable-xxhdpi" />
-      <recent name="F:\Proyectos\Android\Poli_MobileV2.0\app\src\main\res" />
     </key>
   </component>
   <component name="RunManager" selected="Android Application.app">
@@ -2552,20 +2498,27 @@
       <option name="project" value="LOCAL" />
       <updated>1443590377377</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Actualización 9/04">
+      <created>1460194527765</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1460194527765</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="simpleUML" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32593855" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36913767" sideWeight="0.509915" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3532423" sideWeight="0.22012103" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3532423" sideWeight="0.22012103" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930514" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32423207" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -2574,14 +2527,13 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36913767" sideWeight="0.49008498" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32764506" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36913767" sideWeight="0.49008498" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Fabric" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4675768" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4675768" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -2593,6 +2545,7 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3492334" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Memory Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32764506" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -2638,7 +2591,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Se crea clase para mejor manejo de servicios web&#10;Se cambia el login" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se crea clase para mejor manejo de servicios web&#10;Se cambia el login" />
+    <MESSAGE value="Actualización 9/04" />
+    <option name="LAST_COMMIT_MESSAGE" value="Actualización 9/04" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2662,12 +2616,6 @@
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/LoginActivity.java</url>
-          <line>153</line>
-          <properties />
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/FacultadesFragment.java</url>
           <line>2</line>
           <properties />
@@ -2680,367 +2628,249 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile_ws/PoliWebService.java</url>
-          <line>437</line>
-          <properties />
-          <option name="timeStamp" value="56" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile_ws/PoliWebService.java</url>
-          <line>482</line>
+          <line>547</line>
           <properties />
           <option name="timeStamp" value="57" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile_ws/PoliWebService.java</url>
-          <line>476</line>
+          <line>541</line>
           <properties />
           <option name="timeStamp" value="58" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile_ws/PoliWebService.java</url>
-          <line>510</line>
+          <line>575</line>
           <properties />
           <option name="timeStamp" value="59" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile_ws/PoliWebService.java</url>
-          <line>466</line>
+          <line>531</line>
           <properties />
           <option name="timeStamp" value="60" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/ListadoClasesFragment.java</url>
-          <line>68</line>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile_ws/PoliWebService.java</url>
+          <line>351</line>
           <properties />
-          <option name="timeStamp" value="61" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/ParcialesFragment.java</url>
-          <line>48</line>
-          <properties />
-          <option name="timeStamp" value="62" />
+          <option name="timeStamp" value="67" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile_ws/PoliWebService.java</url>
-          <line>270</line>
+          <line>368</line>
           <properties />
-          <option name="timeStamp" value="65" />
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/AppData/Local/Android/sdk/platforms/android-21/android.jar!/android/os/Looper.class</url>
+          <line>32</line>
+          <properties />
+          <option name="timeStamp" value="75" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="66" />
+      <option name="time" value="77" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/SabadoFragment.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/list_materias.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.1486486">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_acerca_de.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile_entidades/Noticia.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24216524">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/PPal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/ParcialesFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="50" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#2129#2130#0" expanded="false" />
+            <element signature="e#2169#2170#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_eval_docentes.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.1636364">
+          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/Noticias.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="51" column="17" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/acerca_de.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.05743243">
+          <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/listeners/ParcialListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile_entidades/AutoevalacionDocente.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18803419">
+          <caret line="14" column="31" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/listeners/AutoEvalListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2905983">
-          <caret line="51" column="63" selection-start-line="51" selection-start-column="63" selection-end-line="51" selection-end-column="63" />
+          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/LunesFragment.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/list_autoevaluacion.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5811966">
-          <caret line="61" column="62" selection-start-line="61" selection-start-column="62" selection-end-line="61" selection-end-column="62" />
+        <state vertical-scroll-proportion="-2.290909">
+          <caret line="75" column="51" selection-start-line="75" selection-start-column="51" selection-end-line="75" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/JuevesFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09686609">
-          <caret line="51" column="63" selection-start-line="51" selection-start-column="63" selection-end-line="51" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/DomingoFragment.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/AutoEvalAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="53" column="64" selection-start-line="53" selection-start-column="64" selection-end-line="53" selection-end-column="64" />
+          <caret line="50" column="53" selection-start-line="50" selection-start-column="53" selection-end-line="50" selection-end-column="53" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/MartesFragment.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="56" column="63" selection-start-line="56" selection-start-column="63" selection-end-line="56" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/MiercolesFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="56" column="50" selection-start-line="56" selection-start-column="50" selection-end-line="56" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/HorarioFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/ProgramasActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.613924">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/ViernesFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.05379747">
-          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="53" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_horario.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.8141892">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile_adaptadores/HorarioAdapter.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/AutoEvaluacionFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="64" column="52" selection-start-line="64" selection-start-column="52" selection-end-line="64" selection-end-column="52" />
+          <caret line="31" column="63" selection-start-line="31" selection-start-column="63" selection-end-line="31" selection-end-column="63" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/list_horario.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.2363636">
-          <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/horarioitem.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.6727272">
-          <caret line="109" column="0" selection-start-line="109" selection-start-column="0" selection-end-line="113" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/FacultadesFragment.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile_entidades/ListadoClasesMateria.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/NotasFragment.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/listeners/AcercaDeListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.037037">
-          <caret line="65" column="56" selection-start-line="65" selection-start-column="56" selection-end-line="65" selection-end-column="56" />
+        <state vertical-scroll-proportion="0.29929578">
+          <caret line="8" column="54" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/network/SOAPHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="160" column="0" selection-start-line="160" selection-start-column="0" selection-end-line="160" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile_ws/WsNotas.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="4.46519">
-          <caret line="112" column="9" selection-start-line="96" selection-start-column="12" selection-end-line="112" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile_adaptadores/NotasAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="66" column="78" selection-start-line="66" selection-start-column="78" selection-end-line="66" selection-end-column="78" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_about.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/events_calendar_icon.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/nota_item.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.6727272">
-          <caret line="198" column="0" selection-start-line="198" selection-start-column="0" selection-end-line="202" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/materia_item.xml">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.076923">
-          <caret line="100" column="43" selection-start-line="100" selection-start-column="43" selection-end-line="100" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_recibo.xml">
       <provider selected="true" editor-type-id="android-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/list_notas.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28716215">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile_adaptadores/ListaMateriaAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5641026">
-          <caret line="42" column="22" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/list_materias.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.5454545">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/ProgramaActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12820514">
-          <caret line="46" column="61" selection-start-line="46" selection-start-column="61" selection-end-line="46" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/listeners/ListadorMateriaListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19373219">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/navigation_main.xml">
       <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.1538463">
-          <caret line="81" column="17" selection-start-line="81" selection-start-column="17" selection-end-line="81" selection-end-column="17" />
+        <state vertical-scroll-proportion="-5.8846154">
+          <caret line="315" column="33" selection-start-line="315" selection-start-column="33" selection-end-line="315" selection-end-column="33" />
           <folding />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/AcercaDe.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.0">
-          <caret line="33" column="50" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="50" />
+        <state vertical-scroll-proportion="0.23943663">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/navigation_main_include.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/AcercaDeActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-24.10909">
-          <caret line="78" column="53" selection-start-line="78" selection-start-column="53" selection-end-line="78" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36">
-          <caret line="307" column="17" selection-start-line="307" selection-start-column="17" selection-end-line="307" selection-end-column="17" />
+        <state vertical-scroll-proportion="2.0176055">
+          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/main_content.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.090909">
-          <caret line="10" column="48" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_partials.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_navigation_drawer.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.038462">
-          <caret line="87" column="0" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.5272727">
-          <caret line="26" column="44" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile_ws/WsListadoClases.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile_entidades/ComprobantePago.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="102" column="8" selection-start-line="102" selection-start-column="8" selection-end-line="102" selection-end-column="8" />
+          <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/ComprobanteFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="53" column="51" selection-start-line="53" selection-start-column="51" selection-end-line="53" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -3052,40 +2882,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/list_cita_medica.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/listeners/AsesorialListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.35915494">
+          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/listeners/ComprobantelListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23943663">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_asesoria.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/list_parciales.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="19.472727">
-          <caret line="33" column="59" selection-start-line="33" selection-start-column="59" selection-end-line="33" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/ParcialesAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23820755">
-          <caret line="37" column="26" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/listeners/FacultadesListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12028302">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.48034933">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -3093,52 +2912,236 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/listeners/IPoliWebService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="59" selection-start-line="26" selection-start-column="59" selection-end-line="26" selection-end-column="59" />
+          <caret line="38" column="60" selection-start-line="38" selection-start-column="60" selection-end-line="38" selection-end-column="60" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/MenuEstudiante.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile_entidades/asesoriaAcademica.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="170" column="51" selection-start-line="170" selection-start-column="51" selection-end-line="170" selection-end-column="51" />
-          <folding />
+        <state vertical-scroll-proportion="-1.5739436">
+          <caret line="26" column="38" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
+          <folding>
+            <element signature="e#751#752#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_parciales.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="4.2">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/list_asesoria.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile_entidades/ProgramacionParcial.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38746437">
-          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.14847161">
+          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/listeners/ParcialListener.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_asesoria_dtl.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.33624455">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_navigation_drawer.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.0769231">
+          <caret line="44" column="27" selection-start-line="44" selection-start-column="27" selection-end-line="44" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/list_asesoria_detalle.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.3076923">
+          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/AsesoriaActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="53" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
+          <caret line="26" column="53" selection-start-line="26" selection-start-column="53" selection-end-line="26" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/Asesoria_DtlAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/AsesoriaAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="60" column="21" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
+          <folding>
+            <element signature="e#1883#2561#0" expanded="true" />
+            <element signature="e#2047#2066#0" expanded="true" />
+            <element signature="e#2560#2561#0" expanded="true" />
+            <element signature="e#2646#2647#0" expanded="true" />
+            <element signature="e#2683#2684#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/AppData/Local/Android/sdk/platforms/android-21/android.jar!/android/os/AsyncTask.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/AppData/Local/Android/sdk/platforms/android-21/android.jar!/android/os/Handler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.7407408">
+          <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+          <folding>
+            <element signature="e#753#754#0" expanded="true" />
+            <element signature="e#804#805#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/AppData/Local/Android/sdk/platforms/android-21/android.jar!/android/os/Looper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.70434785">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding>
+            <element signature="e#593#594#0" expanded="true" />
+            <element signature="e#644#645#0" expanded="true" />
+            <element signature="e#683#684#0" expanded="true" />
+            <element signature="e#734#735#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/network/SOAPHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46126762">
+          <caret line="160" column="0" selection-start-line="160" selection-start-column="0" selection-end-line="160" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile_ws/PoliWebService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="502" column="0" selection-start-line="502" selection-start-column="0" selection-end-line="502" selection-end-column="0" />
+          <folding>
+            <element signature="e#18265#18287#0" expanded="true" />
+            <element signature="e#32179#32196#0" expanded="true" />
+            <element signature="e#34774#37052#0" expanded="true" />
+            <element signature="e#35460#35479#0" expanded="true" />
+            <element signature="e#37051#37052#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="17.773584">
+          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/utilidades/ApplicationSession.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.8919753">
+          <caret line="27" column="36" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
           <folding>
-            <element signature="e#1990#1991#0" expanded="true" />
+            <element signature="e#1059#1060#0" expanded="true" />
+            <element signature="e#1103#1104#0" expanded="true" />
+            <element signature="e#1140#1141#0" expanded="true" />
+            <element signature="e#2445#2446#0" expanded="true" />
+            <element signature="e#2467#2468#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.14545454">
+          <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+          <folding>
+            <element signature="e#606#624#0" expanded="true" />
+            <element signature="e#736#754#0" expanded="true" />
+            <element signature="e#1111#1129#0" expanded="true" />
+            <element signature="e#1985#2003#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/AsesoriaFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/raised_button_background.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15692307">
+          <caret line="3" column="47" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-v21/raised_button_background.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15692307">
+          <caret line="3" column="47" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values-v21/styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44966444">
+          <caret line="8" column="65" selection-start-line="8" selection-start-column="65" selection-end-line="8" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/LoginActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.6495726">
+          <caret line="98" column="5" selection-start-line="98" selection-start-column="5" selection-end-line="98" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7128378">
+          <caret line="82" column="35" selection-start-line="82" selection-start-column="35" selection-end-line="82" selection-end-column="35" />
+          <folding>
+            <element signature="e#630#648#0" expanded="true" />
+            <element signature="e#1110#1128#0" expanded="true" />
+            <element signature="e#1626#1644#0" expanded="true" />
+            <element signature="e#2019#2041#0" expanded="true" />
+            <element signature="e#2081#2103#0" expanded="true" />
+            <element signature="e#2515#2546#0" expanded="true" />
+            <element signature="e#2859#2881#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -3146,79 +3149,23 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/network/NetworkManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="129" column="0" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
+          <caret line="233" column="56" selection-start-line="233" selection-start-column="56" selection-end-line="233" selection-end-column="56" />
           <folding>
-            <element signature="e#2118#2119#0" expanded="true" />
-            <element signature="e#2156#2157#0" expanded="true" />
-            <element signature="e#2348#2349#0" expanded="true" />
-            <element signature="e#2394#2395#0" expanded="true" />
-            <element signature="e#4650#4651#0" expanded="true" />
+            <element signature="e#2842#2843#0" expanded="true" />
+            <element signature="e#2882#2883#0" expanded="true" />
+            <element signature="e#10744#10745#0" expanded="true" />
+            <element signature="e#10816#10817#0" expanded="true" />
+            <element signature="e#10853#10854#0" expanded="true" />
+            <element signature="e#10922#10923#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile_entidades/AcercaDe.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/MenuEstudiante.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="74" column="49" selection-start-line="74" selection-start-column="49" selection-end-line="74" selection-end-column="49" />
-          <folding>
-            <element signature="e#471#472#0" expanded="true" />
-            <element signature="e#523#524#0" expanded="true" />
-            <element signature="e#562#563#0" expanded="true" />
-            <element signature="e#597#598#0" expanded="true" />
-            <element signature="e#653#654#0" expanded="true" />
-            <element signature="e#701#702#0" expanded="true" />
-            <element signature="e#736#737#0" expanded="true" />
-            <element signature="e#767#768#0" expanded="true" />
-            <element signature="e#815#816#0" expanded="true" />
-            <element signature="e#855#856#0" expanded="true" />
-            <element signature="e#888#889#0" expanded="true" />
-            <element signature="e#917#918#0" expanded="true" />
-            <element signature="e#961#962#0" expanded="true" />
-            <element signature="e#997#998#0" expanded="true" />
-            <element signature="e#1030#1031#0" expanded="true" />
-            <element signature="e#1059#1060#0" expanded="true" />
-            <element signature="e#1103#1104#0" expanded="true" />
-            <element signature="e#1139#1140#0" expanded="true" />
-            <element signature="e#1172#1173#0" expanded="true" />
-            <element signature="e#1201#1202#0" expanded="true" />
-            <element signature="e#1245#1246#0" expanded="true" />
-            <element signature="e#1281#1282#0" expanded="true" />
-            <element signature="e#1326#1327#0" expanded="true" />
-            <element signature="e#1367#1368#0" expanded="true" />
-            <element signature="e#1538#1539#0" expanded="true" />
-            <element signature="e#1577#1578#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile/ui/ParcialesFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.43589744">
+          <caret line="246" column="16" selection-start-line="246" selection-start-column="16" selection-end-line="246" selection-end-column="16" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poli_mobile/poli_mobile_ws/PoliWebService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3309859">
-          <caret line="270" column="0" selection-start-line="270" selection-start-column="0" selection-end-line="270" selection-end-column="0" />
-          <folding>
-            <element signature="e#3539#3549#0" expanded="true" />
-            <element signature="e#4543#4553#0" expanded="true" />
-            <element signature="e#9362#9374#0" expanded="true" />
-            <element signature="e#11795#13762#0" expanded="true" />
-            <element signature="e#12476#12497#0" expanded="true" />
-            <element signature="e#13761#13762#0" expanded="true" />
-            <element signature="e#15339#15360#0" expanded="true" />
-            <element signature="e#17306#19594#0" expanded="true" />
-            <element signature="e#19593#19594#0" expanded="true" />
-            <element signature="e#20496#22253#0" expanded="true" />
-            <element signature="e#22252#22253#0" expanded="true" />
-            <element signature="e#23150#24662#0" expanded="true" />
-            <element signature="e#24661#24662#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
